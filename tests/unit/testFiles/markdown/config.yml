@@ -1,0 +1,13 @@
+default:
+  level_to_slide:
+    h1: section
+    h2: title-content
+  slides:
+    - op-cover
+    - toc
+  default_slide: title-content
+  toc_heading:
+    en: Table of Contents
+    de: Inhaltsverzeichnis
+    fr: Table des Matières
+    es: Tabla de Contenidos

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>{{ presentation_title }}</title>
+
+        <link rel="stylesheet" href="dist/css/vendor.css" />
+        <link rel="stylesheet" href="dist/css/metadata.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-separator-by-heading>
+                    <textarea data-template>{{{ md_content }}}</textarea>
+                </section>
+            </div>
+        </div>
+        <script src="dist/js/vendor.js"></script>
+        <script src="dist/js/utils.js"></script>
+        <script src="config-reveal.js"></script>
+        <script src="utils/helper.js"></script>
+        <script>
+            // config is defined in config-reveal.js
+            Reveal.addEventListener('ready', function (event) {
+                addBackgroundOverlay()
+                updateImageStructure()
+                updateImageUrl('{{{ imagePath }}}')
+                addCustomSlideNumber(event)
+                fitContent()
+                showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
+            })
+            Reveal.addEventListener('slidechanged', function (event) {
+                setIndex({{{ headingData }}})
+                adjustFontSize()
+            })
+            // adding the 'resize' event because slides gets resized during pdf export
+            Reveal.on('resize', function() {
+                addBackgroundOverlay()
+            })
+            Reveal.configure(config)
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealAwesoMD, RevealHighlight, RevealNotes],
+            })
+        </script>
+    </body>
+</html>

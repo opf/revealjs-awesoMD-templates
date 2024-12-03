@@ -1,0 +1,12 @@
+{
+  "reporter": [
+    "text",
+    "text-summary",
+    "html"
+  ],
+  "exclude": [
+    "**/dist/js/*",
+    "**/jest.config.js",
+    "**/livereload.js"
+  ]
+}

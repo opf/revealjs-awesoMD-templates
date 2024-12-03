@@ -1,0 +1,67 @@
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "markdown/**"
+  pull_request:
+    paths-ignore:
+      - "markdown/**"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9.x.x
+          run_install: false
+
+      - name: Cache puppeteer chromium
+        uses: actions/cache@v3
+        id: puppeteer-cache
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            puppeteer-${{ runner.os }}-
+
+      - name: Cache pnpm store
+        uses: actions/cache@v3
+        id: pnpm-cache
+        with:
+          path: ./.pnpm-store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-store-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          mkdir -p ./.pnpm-store
+          pnpm config set store-dir ./.pnpm-store
+          pnpm install --frozen-lockfile
+
+      - name: EsLint
+        run: pnpm lint
+
+      - name: Build presentation
+        run: pnpm build
+
+      - name: Install test dependencies
+        working-directory: tests/unit
+        run: pnpm install --frozen-lockfile
+
+      - name: Unit Tests
+        working-directory: tests/unit
+        run: pnpm test:unit
