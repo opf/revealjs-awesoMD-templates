@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+    "block-no-empty": null,
+    "unit-allowed-list": ["em", "rem", "s", "px", "%", "deg", "vh", "vw"],
+    "selector-list-comma-newline-after": null,
+    "no-extra-semicolons": true,
+    "declaration-block-trailing-semicolon": "always",
+    "string-quotes": "single",
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["import", "extend"]
+    }]
+  },
+  "ignoreFiles": ["**/*.js", "**/*.md", "**/*.png", "**/*.jpg", "**/*.gif", "**/*.svg", "**/*.json", "**/*.html"]
+}

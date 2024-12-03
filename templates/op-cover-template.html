@@ -1,0 +1,22 @@
+<script type="x-tmpl-mustache">
+<div class="content-container">
+<div class="content-wrapper">
+
+<div class="cover-logo">
+<img src="markdown/assets/op-logo-dark.png" alt="Logo">
+</div>
+
+<div class="content">
+<h1>{{ title }}</h1>
+<p>
+{{ metadata.presenter }}
+{{ #content }}
+- {{{ content }}}
+{{ /content }}
+</p>
+
+</div>
+
+</div>
+</div>
+</script>

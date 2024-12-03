@@ -1,0 +1,75 @@
+{
+    "name": "openproject-presentations",
+    "description": "Presentations builder for markdown with metadata, using reveal.js",
+    "keywords": [
+        "reveal",
+        "slides",
+        "presentation",
+        "markdown"
+    ],
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jankaritech/openproject-presentations.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jankaitech/openproject-presentations/issues"
+    },
+    "license": "",
+    "author": {
+        "name": "JankariTech",
+        "url": "https://www.jankaritech.com",
+        "email": "info@jankaritech.com",
+        "github": "https://github.com/jankaritech"
+    },
+    "scripts": {
+        "start": "gulp serve --file",
+        "build": "gulp build",
+        "lint": "gulp lint",
+        "lint:fix": "gulp format",
+        "markdown:lint": "node utils/mdFileCheck.js",
+        "export-pdf": "node ./utils/exporter.js pdf",
+        "export-pdf-docker": "node ./utils/exporter.js pdf-docker",
+        "export-html": "node ./utils/exporter.js html",
+        "export": "npm run export-pdf && npm run export-html"
+    },
+    "dependencies": {
+        "revealjs-awesomd": "github:opf/revealjs-awesomd"
+    },
+    "devDependencies": {
+        "browserify": "^17.0.0",
+        "decktape": "^3.14.0",
+        "front-matter": "^4.0.2",
+        "fs-extra": "^11.2.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-eslint": "^6.0.0",
+        "gulp-htmlhint": "^4.0.2",
+        "gulp-mustache": "^5.0.0",
+        "gulp-prettier": "^5.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-stylelint": "^13.0.0",
+        "gulp-uglify": "^3.0.2",
+        "js-yaml": "^4.1.0",
+        "jsdom": "^24.0.0",
+        "marked": "^4.3.0",
+        "puppeteer": "^23.1.0",
+        "reveal.js": "^5.1.0",
+        "sass": "^1.77.0",
+        "vinyl-buffer": "^1.0.1",
+        "vinyl-source-stream": "^2.0.0",
+        "yargs": "^17.7.2"
+    },
+    "overrides": {
+        "glob-parent": "6.0.2",
+        "chokidar": "3.5.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
