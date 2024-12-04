@@ -60,7 +60,7 @@ async function exportAsHTML(url, outputUrl) {
         const sourceDir = './markdown/' + fileName
         const destinationDir = `${outputUri}/markdown/`
         await fs.copy(`${sourceDir}/`, `./${destinationDir}/${fileName}`, { overwrite: false })
-        await fs.copy('./markdown/assets', `./${destinationDir}/assets`, { overwrite: false })
+        await fs.copy('./templates/assets', `./${outputUri}/templates/assets`, { overwrite: false })
 
         console.info('✅ Static HTML export completed.')
         exec(
