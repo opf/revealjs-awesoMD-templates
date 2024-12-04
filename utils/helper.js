@@ -211,7 +211,7 @@ function addBackgroundOverlay() {
         const img = document.createElement('img')
         imageContainer.appendChild(img)
 
-        img.src = 'markdown/assets/OpenProject-Screen.png'
+        img.src = 'templates/assets/OpenProject-Screen.png'
         img.alt = 'cover page'
 
         img.style.borderRadius = '15px 0 0 15px'
