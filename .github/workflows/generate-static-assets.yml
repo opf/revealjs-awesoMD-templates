@@ -1,0 +1,82 @@
+name: Generate PDF
+
+on:
+  repository_dispatch:
+    inputs:
+      commit:
+      changed_files:
+
+jobs:
+  generate:
+    runs-on: [ ubuntu-latest ]
+    env:
+      CHANGED_MARKDOWN_FILES: ${{ github.event.inputs.changed_files }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clone training
+        run: |
+          git clone git@github.com:opf/training.git
+          cd training
+          git checkout ${{ github.event.inputs.commit }}
+          cd ..
+          mv training/markdown ./markdown
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9.x.x
+          run_install: false
+
+      - name: Cache puppeteer chromium
+        uses: actions/cache@v3
+        id: puppeteer-cache
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            puppeteer-${{ runner.os }}-
+
+      - name: Cache pnpm store
+        uses: actions/cache@v3
+        id: pnpm-cache
+        with:
+          path: ./.pnpm-store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-store-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          mkdir -p ./.pnpm-store
+          pnpm config set store-dir ./.pnpm-store
+          pnpm install --frozen-lockfile
+
+      - name: Build presentation
+        run: pnpm build
+
+      - name: Generate PDFs
+        run: |
+          sudo apt-get install wait-for-it -y
+          chmod +x scripts/*
+          ./scripts/generate.sh
+
+      - name: Upload generated pdfs to nextcloud
+        env:
+          NEXTCLOUD_USERNAME: ${{ secrets.NEXTCLOUD_USERNAME }}
+          NEXTCLOUD_APP_ACCESS_KEY: ${{ secrets.NEXTCLOUD_APP_ACCESS_KEY }}
+        run: ./scripts/upload.sh
+
+#      - name: Comment Pull Request
+#        uses: thollander/actions-comment-pull-request@v2.5.0
+#        if: github.event_name == 'pull_request'
+#        with:
+#          filePath: ./scripts/comment.txt
+#          comment_tag: execution
+
