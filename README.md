@@ -1,7 +1,7 @@
 # revealjs-awesoMD-templates
 OpenProject layouts and scripts for the slide generator [revealjs-awesoMD](https://github.com/opf/revealjs-awesoMD).
 
-It is based on [reveal.js](https://revealjs.com/) and have the following features.
+It is based on [reveal.js](https://revealjs.com/) and have the following features:
 
 - Create presentations from markdown files
 - Supports metadata in markdown files
