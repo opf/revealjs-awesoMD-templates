@@ -59,6 +59,8 @@ function getHeadingData(rawMarkdown) {
                 headingLevel: options.metadata.level,
                 toc: options.metadata.toc,
                 slide: options.metadata.slide || frontMatter.slide,
+                background: options.metadata.background,
+                pdfbackground: options.metadata.pdfbackground,
                 index,
                 headingText,
             })

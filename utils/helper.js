@@ -117,7 +117,7 @@ function setIndex(headingData) {
                     sectionIndex.textContent = heading.index
                     content.insertBefore(sectionIndex, content.firstChild)
                 }
-            } else if (heading.slide === 'cover') {
+            } else if (['cover', 'image'].includes(heading.slide)) {
                 return
             } else {
                 const headingElement = currentSlide.querySelector('h1')
@@ -215,5 +215,32 @@ function addBackgroundOverlay() {
         img.alt = 'cover page'
 
         img.style.borderRadius = '15px 0 0 15px'
+    }
+}
+
+// eslint-disable-next-line
+function setFullPageBackground(headingData, imagePath) {
+    for (const data of headingData) {
+        if (data.slide === 'image') {
+            if (data.background && data.pdfbackground) {
+                const slide = document.querySelector(`.backgrounds .${data.slide}`)
+                slide.style.backgroundImage = `url('${imagePath}/${data.background}')`
+                slide.style.backgroundRepeat = 'no-repeat'
+                slide.style.backgroundSize = 'cover'
+                slide.style.backgroundPosition = 'center'
+
+                // set the window size to pdf size and update the background only when the window size changes to pdf size
+                // this will prevent the background image from updating while minimizing the browser
+                const pdfWidth = 1123
+                const pdfHeight = 794
+                if (window.innerWidth === pdfWidth && window.innerHeight === pdfHeight) {
+                    slide.style.backgroundImage = `url('${imagePath}/${data.pdfbackground}')`
+                    slide.style.backgroundSize = '100% 100%'
+                }
+            } else {
+                const slide = document.querySelector(`.${data.slide}`)
+                slide.textContent = 'Please provide a background image for this slide'
+            }
+        }
     }
 }
