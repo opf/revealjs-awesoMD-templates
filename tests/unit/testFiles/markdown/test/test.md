@@ -64,6 +64,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor inc
 
 ![](test-image.jpg)
 
+## ::slide:image ::background:test-16-9.png ::pdfbackground:test-4-3.png
+
+This is some content.
+
 # Section Slide for long TOC
 # Section Slide for long TOC
 # Section Slide for long TOC

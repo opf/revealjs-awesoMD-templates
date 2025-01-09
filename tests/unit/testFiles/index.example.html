@@ -30,6 +30,7 @@
                 addCustomSlideNumber(event)
                 fitContent()
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
+                setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}')
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
@@ -37,6 +38,7 @@
             })
             Reveal.addEventListener('resize', function () {
                 addBackgroundOverlay()
+                setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}')
             })
             Reveal.configure(config)
             Reveal.initialize({

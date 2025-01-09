@@ -10,6 +10,8 @@ const { signal } = controller
 const port = config.port
 const screenWidth = config.screenWidth
 const screenHeight = config.screenHeight
+const pdfWidth = 1123
+const pdfHeight = 794
 const testUrl = config.testUrl
 let browser
 let page
@@ -25,6 +27,13 @@ const startTestServer = async (file) => {
     if (!serverReady) {
         throw new Error('Server is not ready')
     }
+}
+const setScreenSize = async (screenWidth, screenHeight) => {
+    // Set screen size. And wait for the transition to finish
+    // When changing the screen/viewport size, the transition takes some time to finish.
+    // If we check snapshots too early, the test results might be flaky
+    await page.setViewport({ width: screenWidth, height: screenHeight })
+    await page.waitForFunction(testHelper.isViewportSize, {}, screenWidth, screenHeight)
 }
 
 beforeAll(async () => {
@@ -49,14 +58,11 @@ beforeEach(async () => {
     page = await browser.newPage()
     await page.coverage.startJSCoverage({ resetOnNavigation: false })
     await page.goto(testUrl, { waitUntil: 'networkidle0' })
-    // Set screen size. And wait for the transition to finish
-    // When changing the screen/viewport size, the transition takes some time to finish.
-    // If we check snapshots too early, the test results might be flacky
-    await page.setViewport({ width: screenWidth, height: screenHeight })
-    await page.waitForFunction(testHelper.isViewportSize, {}, screenWidth, screenHeight)
 })
+
 describe('test markdown presentation', () => {
     it('should render markdown presentation', async () => {
+        await setScreenSize(screenWidth, screenHeight)
         expect(beautify(await page.content())).toMatchSnapshot()
 
         for (let i = 0; i < 30; i++) {
@@ -65,5 +71,25 @@ describe('test markdown presentation', () => {
             await testHelper.waitForTransitionEnd(page, '.progress')
             expect(beautify(await page.content())).toMatchSnapshot()
         }
+    }, 60000)
+
+    it('should use 16:9 dimension image for normal window size', async () => {
+        await setScreenSize(screenWidth, screenHeight)
+        const backgroundImage = await page.evaluate(() => {
+            const imageSlide = document.querySelector('.backgrounds .image')
+            const computedStyle = getComputedStyle(imageSlide)
+            return computedStyle.backgroundImage
+        })
+        expect(backgroundImage).toBe('url("http://localhost:8080/markdown/test/test-16-9.png")')
+    }, 60000)
+
+    it('should use 4:3 dimension image when the window size changes to pdf size', async () => {
+        await setScreenSize(pdfWidth, pdfHeight)
+        const backgroundImage = await page.evaluate(() => {
+            const imageSlide = document.querySelector('.backgrounds .image')
+            const computedStyle = getComputedStyle(imageSlide)
+            return computedStyle.backgroundImage
+        })
+        expect(backgroundImage).toBe('url("http://localhost:8080/markdown/test/test-4-3.png")')
     }, 60000)
 })
