@@ -2,8 +2,6 @@
 
 OP_URL="https://nextcloud.openproject.org"
 NC_DAV_PATH="remote.php/dav/files"
-UPLOAD_FOLDER="PDF/training/final"
-TEMP_UPLOAD_FOLDER="PDF/training/temp"
 
 shopt -s globstar nullglob
 
@@ -33,13 +31,15 @@ function throw_if_empty() {
   local value="$2"
   if [ -z "$value" ]; then
     print_usage
-    echo "  Parameter $name are empty." 1>&2
+    echo "  Parameter $name empty." 1>&2
     exit -1
   fi
 }
 
 throw_if_empty "1 (user name) and ENV[NEXTCLOUD_USERNAME]" $USER
 throw_if_empty "2 (password) and ENV[NEXTCLOUD_APP_ACCESS_KEY]" $PASS
+throw_if_empty "ENV[NEXTCLOUD_UPLOAD_FINAL_FOLDER]" $NEXTCLOUD_UPLOAD_FINAL_FOLDER
+throw_if_empty "ENV[NEXTCLOUD_UPLOAD_TEMP_FOLDER]" $NEXTCLOUD_UPLOAD_TEMP_FOLDER
 
 function get_folder_path() {
   local FOLDER_PATH="$1"
@@ -74,9 +74,9 @@ function delete_temp_pdf() {
 
   temp_filename=$(get_file_prefix "$branch_name")
   echo "Deleting temporary pdf file $temp_filename"
-  response_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$TEMP_UPLOAD_FOLDER/$temp_filename" -X GET)
+  response_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$NEXTCLOUD_UPLOAD_TEMP_FOLDER/$temp_filename" -X GET)
   if [ "$response_code" == "200" ]; then
-    resp_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$TEMP_UPLOAD_FOLDER/$temp_filename" -X DELETE)
+    resp_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$NEXTCLOUD_UPLOAD_TEMP_FOLDER/$temp_filename" -X DELETE)
     if [ "$resp_code" != "204" ]; then
       echo "Failed to delete file $temp_filename."
     fi
@@ -92,10 +92,10 @@ do
       continue
     fi
     temp_filename=$(get_file_prefix "$GITHUB_HEAD_REF")
-    destination="$(get_folder_path "$TEMP_UPLOAD_FOLDER")/${temp_filename}"
+    destination="$(get_folder_path "$NEXTCLOUD_UPLOAD_TEMP_FOLDER")/${temp_filename}"
   else
     delete_temp_pdf
-    destination="$(get_folder_path "$UPLOAD_FOLDER")/${filename}"
+    destination="$(get_folder_path "$NEXTCLOUD_UPLOAD_FINAL_FOLDER")/${filename}"
   fi
 
   echo "Uploading $filename"
