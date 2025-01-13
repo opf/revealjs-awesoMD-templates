@@ -68,6 +68,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor inc
 
 This is some content.
 
+## ::slide:image
+some content
+
 # Section Slide for long TOC
 # Section Slide for long TOC
 # Section Slide for long TOC

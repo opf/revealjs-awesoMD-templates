@@ -35,6 +35,7 @@
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
                 adjustFontSize()
+                setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}')
             })
             // adding the 'resize' event because slides gets resized during pdf export
             Reveal.on('resize', function() {

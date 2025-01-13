@@ -34,7 +34,7 @@
         "export": "npm run export-pdf && npm run export-html"
     },
     "dependencies": {
-        "revealjs-awesomd": "github:opf/revealjs-awesomd#update-title-regex"
+        "revealjs-awesomd": "github:opf/revealjs-awesomd"
     },
     "devDependencies": {
         "browserify": "^17.0.0",

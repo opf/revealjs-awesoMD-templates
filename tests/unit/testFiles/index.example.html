@@ -35,6 +35,7 @@
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
                 adjustFontSize()
+                setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}')
             })
             Reveal.addEventListener('resize', function () {
                 addBackgroundOverlay()

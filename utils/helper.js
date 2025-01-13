@@ -220,26 +220,34 @@ function addBackgroundOverlay() {
 
 // eslint-disable-next-line
 function setFullPageBackground(headingData, imagePath) {
-    for (const data of headingData) {
-        if (data.slide === 'image') {
-            if (data.background && data.pdfbackground) {
-                const slide = document.querySelector(`.backgrounds .${data.slide}`)
-                slide.style.backgroundImage = `url('${imagePath}/${data.background}')`
-                slide.style.backgroundRepeat = 'no-repeat'
-                slide.style.backgroundSize = 'cover'
-                slide.style.backgroundPosition = 'center'
+    const slideBackgrounds = document.getElementsByClassName('slide-background')
+    for (const [index, slideBackground] of Array.from(slideBackgrounds).entries()) {
+        const slide = slideBackground.classList.value
+            .replace('slide-background', '')
+            .replace(/(past|present|future)/, '')
+            .trim()
+        if (slide === 'image') {
+            // the slideNumber starts form 2 for presentation containing cover and toc, i.e. the first headingData refers to the third slide
+            // the slideNumber starts from 1 for presentation containing cover but no toc, i.e. the first headingData refers to the second slide
+            // so getting slide specific data from headingData by subtracting index value by first value of slideNumber
+            const slideData = headingData[index - headingData[0].slideNumber]
+            if (slideData.background && slideData.pdfbackground) {
+                slideBackground.style.backgroundImage = `url('${imagePath}/${slideData.background}')`
+                slideBackground.style.backgroundRepeat = 'no-repeat'
+                slideBackground.style.backgroundSize = 'cover'
+                slideBackground.style.backgroundPosition = 'center'
 
-                // set the window size to pdf size and update the background only when the window size changes to pdf size
-                // this will prevent the background image from updating while minimizing the browser
+                // update the background only when the window size changes to pdf size
+                // for normal browser window size, or if the browser is minimized do not update the image
                 const pdfWidth = 1123
                 const pdfHeight = 794
                 if (window.innerWidth === pdfWidth && window.innerHeight === pdfHeight) {
-                    slide.style.backgroundImage = `url('${imagePath}/${data.pdfbackground}')`
-                    slide.style.backgroundSize = '100% 100%'
+                    slideBackground.style.backgroundImage = `url('${imagePath}/${slideData.pdfbackground}')`
+                    slideBackground.style.backgroundSize = '100% 100%'
                 }
             } else {
-                const slide = document.querySelector(`.${data.slide}`)
-                slide.textContent = 'Please provide a background image for this slide'
+                const slideBackgroundContent = slideBackground.querySelector('.slide-background-content')
+                slideBackgroundContent.textContent = 'Please provide background image for this slide'
             }
         }
     }

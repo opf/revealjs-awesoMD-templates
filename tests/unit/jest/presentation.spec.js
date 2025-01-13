@@ -36,6 +36,22 @@ const setScreenSize = async (screenWidth, screenHeight) => {
     await page.waitForFunction(testHelper.isViewportSize, {}, screenWidth, screenHeight)
 }
 
+const getBackgroundContents = async () => {
+    return page.evaluate(() => {
+        const imageSlides = document.querySelectorAll('.backgrounds .image')
+        const images = []
+        for (const imageSlide of imageSlides) {
+            const computedStyle = getComputedStyle(imageSlide)
+            if (computedStyle.backgroundImage !== 'none') {
+                images.push(computedStyle.backgroundImage)
+            } else {
+                images.push(imageSlide.innerText)
+            }
+        }
+        return images
+    })
+}
+
 beforeAll(async () => {
     await testHelper.copyAssets()
     await startTestServer('test.md')
@@ -73,23 +89,23 @@ describe('test markdown presentation', () => {
         }
     }, 60000)
 
-    it('should use 16:9 dimension image for normal window size', async () => {
+    it('should use 16:9 dimension image for normal window size and show error message when background image is not provided', async () => {
+        const expectedBackgroundContents = [
+            'url("http://localhost:8080/markdown/test/test-16-9.png")',
+            'Please provide background image for this slide',
+        ]
         await setScreenSize(screenWidth, screenHeight)
-        const backgroundImage = await page.evaluate(() => {
-            const imageSlide = document.querySelector('.backgrounds .image')
-            const computedStyle = getComputedStyle(imageSlide)
-            return computedStyle.backgroundImage
-        })
-        expect(backgroundImage).toBe('url("http://localhost:8080/markdown/test/test-16-9.png")')
+        const backgroundContents = await getBackgroundContents()
+        expect(backgroundContents).toEqual(expectedBackgroundContents)
     }, 60000)
 
-    it('should use 4:3 dimension image when the window size changes to pdf size', async () => {
+    it('should use 4:3 dimension image for pdf and show error message when background image is not provided', async () => {
+        const expectedBackgroundContents = [
+            'url("http://localhost:8080/markdown/test/test-4-3.png")',
+            'Please provide background image for this slide',
+        ]
         await setScreenSize(pdfWidth, pdfHeight)
-        const backgroundImage = await page.evaluate(() => {
-            const imageSlide = document.querySelector('.backgrounds .image')
-            const computedStyle = getComputedStyle(imageSlide)
-            return computedStyle.backgroundImage
-        })
-        expect(backgroundImage).toBe('url("http://localhost:8080/markdown/test/test-4-3.png")')
+        const backgroundContents = await getBackgroundContents()
+        expect(backgroundContents).toEqual(expectedBackgroundContents)
     }, 60000)
 })
