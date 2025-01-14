@@ -125,7 +125,7 @@ function insertTocSlide(rawMarkdown) {
     const tocCoverRegex = /^#\s.*::slide:toc$/gm
 
     if (!tocCoverRegex.test(rawMarkdown)) {
-        tocString += '# ::slide:toc\n\n'
+        tocString += '\n# ::slide:toc\n\n'
         if (opCoverRegex.test(rawMarkdown)) {
             regex = /#{1,6}\s.+::slide:op-cover.*[^#]*/gm
         }
