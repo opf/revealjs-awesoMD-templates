@@ -6,4 +6,6 @@ module.exports = {
     slideSeparator: '---',
     screenWidth: 1920,
     screenHeight: 1200,
+    pdfWidth: 1123,
+    pdfHeight: 794,
 }

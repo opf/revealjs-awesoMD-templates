@@ -219,7 +219,7 @@ function addBackgroundOverlay() {
 }
 
 // eslint-disable-next-line
-function setFullPageBackground(headingData, imagePath) {
+function setFullPageBackground(headingData, imagePath, pdfWidth, pdfHeight) {
     const slideBackgrounds = document.getElementsByClassName('slide-background')
     for (const [index, slideBackground] of Array.from(slideBackgrounds).entries()) {
         const slide = slideBackground.classList.value
@@ -239,8 +239,6 @@ function setFullPageBackground(headingData, imagePath) {
 
                 // update the background only when the window size changes to pdf size
                 // for normal browser window size, or if the browser is minimized do not update the image
-                const pdfWidth = 1123
-                const pdfHeight = 794
                 if (window.innerWidth === pdfWidth && window.innerHeight === pdfHeight) {
                     slideBackground.style.backgroundImage = `url('${imagePath}/${slideData.pdfbackground}')`
                     slideBackground.style.backgroundSize = '100% 100%'

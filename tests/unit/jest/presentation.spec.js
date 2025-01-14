@@ -10,8 +10,8 @@ const { signal } = controller
 const port = config.port
 const screenWidth = config.screenWidth
 const screenHeight = config.screenHeight
-const pdfWidth = 1123
-const pdfHeight = 794
+const pdfWidth = config.pdfWidth
+const pdfHeight = config.pdfHeight
 const testUrl = config.testUrl
 let browser
 let page
