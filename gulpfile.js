@@ -21,10 +21,11 @@ const utils = require('./utils/utils.js')
 const fs = require('fs-extra')
 const mustache = require('gulp-mustache')
 const rename = require('gulp-rename')
+const config = require('./config')
 
-const ROOT = yargs.argv.root || '.'
-const PORT = yargs.argv.port || 8000
-const HOST = yargs.argv.host || 'localhost'
+const ROOT = yargs.argv.root || config.root
+const PORT = yargs.argv.port || config.port
+const HOST = yargs.argv.host || config.host
 const FILE = yargs.options({
     file: {
         type: 'string',

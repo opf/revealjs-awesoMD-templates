@@ -3,13 +3,14 @@ const pti = require('puppeteer-to-istanbul')
 const { exec } = require('child_process')
 const beautify = require('js-beautify').html
 const testHelper = require('../testHelper')
+const config = require('../testFiles/config')
 
 const controller = new AbortController()
 const { signal } = controller
-const port = 8080
-const screenWidth = 1920
-const screenHeight = 1200
-const testUrl = `http://localhost:${port}`
+const port = config.port
+const screenWidth = config.screenWidth
+const screenHeight = config.screenHeight
+const testUrl = config.testUrl
 let browser
 let page
 

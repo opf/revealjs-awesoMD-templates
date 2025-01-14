@@ -4,10 +4,11 @@ const connect = require('gulp-connect')
 const utils = require('./testFiles/utils/utils')
 const mustache = require('gulp-mustache')
 const rename = require('gulp-rename')
+const config = require('./testFiles/config')
 
-const ROOT = yargs.argv.root || '.'
-const PORT = yargs.argv.port || 8080
-const HOST = yargs.argv.host || 'localhost'
+const ROOT = yargs.argv.root || config.root
+const PORT = yargs.argv.port || config.port
+const HOST = yargs.argv.host || config.host
 
 const FILE = yargs.options({
     file: {
