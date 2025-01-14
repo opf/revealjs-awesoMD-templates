@@ -10,6 +10,8 @@ const { signal } = controller
 const port = config.port
 const screenWidth = config.screenWidth
 const screenHeight = config.screenHeight
+const pdfWidth = config.pdfWidth
+const pdfHeight = config.pdfHeight
 const testUrl = config.testUrl
 let browser
 let page
@@ -25,6 +27,29 @@ const startTestServer = async (file) => {
     if (!serverReady) {
         throw new Error('Server is not ready')
     }
+}
+const setScreenSize = async (screenWidth, screenHeight) => {
+    // Set screen size. And wait for the transition to finish
+    // When changing the screen/viewport size, the transition takes some time to finish.
+    // If we check snapshots too early, the test results might be flaky
+    await page.setViewport({ width: screenWidth, height: screenHeight })
+    await page.waitForFunction(testHelper.isViewportSize, {}, screenWidth, screenHeight)
+}
+
+const getBackgroundContents = async () => {
+    return page.evaluate(() => {
+        const imageSlides = document.querySelectorAll('.backgrounds .image')
+        const images = []
+        for (const imageSlide of imageSlides) {
+            const computedStyle = getComputedStyle(imageSlide)
+            if (computedStyle.backgroundImage !== 'none') {
+                images.push(computedStyle.backgroundImage)
+            } else {
+                images.push(imageSlide.innerText)
+            }
+        }
+        return images
+    })
 }
 
 beforeAll(async () => {
@@ -49,14 +74,11 @@ beforeEach(async () => {
     page = await browser.newPage()
     await page.coverage.startJSCoverage({ resetOnNavigation: false })
     await page.goto(testUrl, { waitUntil: 'networkidle0' })
-    // Set screen size. And wait for the transition to finish
-    // When changing the screen/viewport size, the transition takes some time to finish.
-    // If we check snapshots too early, the test results might be flacky
-    await page.setViewport({ width: screenWidth, height: screenHeight })
-    await page.waitForFunction(testHelper.isViewportSize, {}, screenWidth, screenHeight)
 })
+
 describe('test markdown presentation', () => {
     it('should render markdown presentation', async () => {
+        await setScreenSize(screenWidth, screenHeight)
         expect(beautify(await page.content())).toMatchSnapshot()
 
         for (let i = 0; i < 30; i++) {
@@ -65,5 +87,25 @@ describe('test markdown presentation', () => {
             await testHelper.waitForTransitionEnd(page, '.progress')
             expect(beautify(await page.content())).toMatchSnapshot()
         }
+    }, 60000)
+
+    it('should use 16:9 dimension image for normal window size and show error message when background image is not provided', async () => {
+        const expectedBackgroundContents = [
+            'url("http://localhost:8080/markdown/test/test-16-9.png")',
+            'Please provide background image for this slide',
+        ]
+        await setScreenSize(screenWidth, screenHeight)
+        const backgroundContents = await getBackgroundContents()
+        expect(backgroundContents).toEqual(expectedBackgroundContents)
+    }, 60000)
+
+    it('should use 4:3 dimension image for pdf and show error message when background image is not provided', async () => {
+        const expectedBackgroundContents = [
+            'url("http://localhost:8080/markdown/test/test-4-3.png")',
+            'Please provide background image for this slide',
+        ]
+        await setScreenSize(pdfWidth, pdfHeight)
+        const backgroundContents = await getBackgroundContents()
+        expect(backgroundContents).toEqual(expectedBackgroundContents)
     }, 60000)
 })

@@ -64,6 +64,8 @@ The format for inline metadata is
 |------------------|-----------------------------------------------------------------|
 | `slide`          | The type of slide, see [slide types](#slide-types)              |
 | `toc`            | Should this slide be included in index and the table of content |
+| `background`     | Sets background image of a slide for browser window             |
+| `pdfbackground`  | Sets background image of a slide for exported pdf               |
 
 ##### `slide`
 
@@ -226,6 +228,7 @@ The most used slide type can be given in the default metadata, so you don't need
 | `section`             | the section break for different parts                            | `::slide:section`             |
 | `title-content`       | the slide with title and content (content can be images as well) | `::slide:title-content`       |
 | `title-content-image` | the slide with title, content, and image                         | `::slide:title-content-image` |
+| `image`               | the slide with full background image with content                | `::slide:image`               |
 
 ### Slide "Cover"
 
@@ -387,6 +390,32 @@ Note: The image will always display at the right side, regardless where it is pl
 # TITLE ::slide:title-content-image
 
 ![This is image description](image.png)
+
+CONTENT
+```
+
+### Slide "image"
+
+Preview:
+
+```text
+┌────────────────────────────────────────────────────┐
+│                                                    │
+│                                                    │
+│                                                    │
+│                BACKGROUND IMAGE                    │
+│                                                    │
+│                                                    │
+│   ┌────────────────────────────────────────────┐   │
+│   │                CONTENT                     │   │
+│   └────────────────────────────────────────────┘   │
+└────────────────────────────────────────────────────┘
+```
+
+Code:
+
+```markdown
+## ::slide:image ::background:image1.png ::pdfbackground:image2.png
 
 CONTENT
 ```

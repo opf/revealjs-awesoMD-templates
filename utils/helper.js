@@ -117,7 +117,7 @@ function setIndex(headingData) {
                     sectionIndex.textContent = heading.index
                     content.insertBefore(sectionIndex, content.firstChild)
                 }
-            } else if (heading.slide === 'cover') {
+            } else if (['cover', 'image'].includes(heading.slide)) {
                 return
             } else {
                 const headingElement = currentSlide.querySelector('h1')
@@ -217,5 +217,38 @@ function addBackgroundOverlay() {
         img.alt = 'cover page'
 
         img.style.borderRadius = '15px 0 0 15px'
+    }
+}
+
+// eslint-disable-next-line
+function setFullPageBackground(headingData, imagePath, pdfWidth, pdfHeight) {
+    const slideBackgrounds = document.getElementsByClassName('slide-background')
+    for (const [index, slideBackground] of Array.from(slideBackgrounds).entries()) {
+        const slide = slideBackground.classList.value
+            .replace('slide-background', '')
+            .replace(/(past|present|future)/, '')
+            .trim()
+        if (slide === 'image') {
+            // the slideNumber starts form 2 for presentation containing cover and toc, i.e. the first headingData refers to the third slide
+            // the slideNumber starts from 1 for presentation containing cover but no toc, i.e. the first headingData refers to the second slide
+            // so getting slide specific data from headingData by subtracting index value by first value of slideNumber
+            const slideData = headingData[index - headingData[0].slideNumber]
+            if (slideData.background && slideData.pdfbackground) {
+                slideBackground.style.backgroundImage = `url('${imagePath}/${slideData.background}')`
+                slideBackground.style.backgroundRepeat = 'no-repeat'
+                slideBackground.style.backgroundSize = 'cover'
+                slideBackground.style.backgroundPosition = 'center'
+
+                // update the background only when the window size changes to pdf size
+                // for normal browser window size, or if the browser is minimized do not update the image
+                if (window.innerWidth === pdfWidth && window.innerHeight === pdfHeight) {
+                    slideBackground.style.backgroundImage = `url('${imagePath}/${slideData.pdfbackground}')`
+                    slideBackground.style.backgroundSize = '100% 100%'
+                }
+            } else {
+                const slideBackgroundContent = slideBackground.querySelector('.slide-background-content')
+                slideBackgroundContent.textContent = 'Please provide background image for this slide'
+            }
+        }
     }
 }

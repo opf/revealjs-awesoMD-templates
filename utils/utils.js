@@ -53,16 +53,23 @@ function getHeadingData(rawMarkdown) {
         const slideContents = marked.lexer(content).filter((a) => a.type === 'heading' && a[0] !== null)
         options.metadata['level'] = slideContents[0].depth
 
-        const pushHeadingData = (index, headingText) => {
+        const pushHeadingData = (index, headingText, toc = options.metadata.toc) => {
             headings.push({
                 slideNumber: slideNumber + slideNumberIncrement,
                 headingLevel: options.metadata.level,
-                toc: options.metadata.toc,
+                toc,
                 slide: options.metadata.slide || frontMatter.slide,
+                background: options.metadata.background,
+                pdfbackground: options.metadata.pdfbackground,
                 index,
                 headingText,
             })
         }
+        if (options.metadata.slide === 'image') {
+            slideContents.forEach((slideContent) => pushHeadingData('', slideContent.text, 'false'))
+            return
+        }
+
         if (options.metadata.level === 1) {
             initialLevel = options.metadata.level
             initialIndex = `${mainHeadingCounter}`

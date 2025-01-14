@@ -77,6 +77,7 @@ function renderIndexHTML(folderName, rawMarkdown) {
                 imagePath: `markdown/${folderName}`,
                 slideNumber: fmt[1].metadata.slidenumber ?? 'yes',
                 hideFooter: fmt[1].metadata.footer === undefined || fmt[1].metadata.footer === null,
+                config: config,
             })
         )
         .pipe(rename('index.html'))
