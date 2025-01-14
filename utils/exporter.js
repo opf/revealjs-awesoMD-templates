@@ -3,9 +3,10 @@ const puppeteer = require('puppeteer')
 const fs = require('fs-extra')
 const prettier = require('prettier')
 const { JSDOM } = require('jsdom')
+const config = require('../config')
 
-const url = process.env.PRESENTATION_URL || 'http://localhost:8000'
-const outputUrl = process.env.OUTPUT_URI || 'exports'
+const url = process.env.PRESENTATION_URL || config.presentationUrl
+const outputUrl = process.env.OUTPUT_URI || config.outputUri
 
 function getExportFileName() {
     const storedFilename = JSON.parse(fs.readFileSync('filenameStore.json', 'utf8'))
@@ -18,7 +19,7 @@ async function exportAsPDF(url, outputUrl, arg) {
 
     let decktapeCommand
     if (arg === 'pdf') {
-        decktapeCommand = `decktape reveal -s 1123x794 --page-load-timeout 30000 --chrome-arg=--no-sandbox ${url} ${outputUri}`
+        decktapeCommand = `decktape reveal -s ${config.pdfWidth}x${config.pdfHeight} --page-load-timeout 30000 --chrome-arg=--no-sandbox ${url} ${outputUri}`
     } else {
         decktapeCommand = `docker run --rm -t --net=host -v \`pwd\`:/slides astefanutti/decktape ${url} ${outputUri}`
     }

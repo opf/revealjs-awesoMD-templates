@@ -42,9 +42,7 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -140,7 +138,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -164,7 +161,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -196,7 +192,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -226,7 +221,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -258,7 +252,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -288,7 +281,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -320,7 +312,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -351,7 +342,6 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -1061,8 +1051,7 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
         <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
         <div class="pause-overlay"><button class="resume-button">Resume presentation</button></div>
         <div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">footer content presenter name
-            -
-            some description </div>
+            - some description </div>
     </div>
     <script src="dist/js/vendor.js"></script>
     <script src="dist/js/utils.js"></script>
@@ -1321,9 +1310,7 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -1419,7 +1406,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -1443,7 +1429,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -1475,7 +1460,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -1505,7 +1489,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -1537,7 +1520,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -1567,7 +1549,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -1599,7 +1580,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -1630,7 +1610,6 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -2598,9 +2577,7 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -2697,7 +2674,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -2721,7 +2697,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -2753,7 +2728,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -2783,7 +2757,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -2815,7 +2788,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -2845,7 +2817,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -2877,7 +2848,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -2908,7 +2878,6 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -3876,9 +3845,7 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -3973,7 +3940,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -3997,7 +3963,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -4029,7 +3994,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -4059,7 +4023,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -4091,7 +4054,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -4121,7 +4083,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -4153,7 +4114,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -4184,7 +4144,6 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -5152,9 +5111,7 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -5249,7 +5206,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -5271,7 +5227,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -5303,7 +5258,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -5333,7 +5287,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -5365,7 +5318,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -5395,7 +5347,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -5427,7 +5378,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -5458,7 +5408,6 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -6426,9 +6375,7 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -6523,7 +6470,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -6545,7 +6491,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -6574,7 +6519,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <h1 class="title">1.1. Title Image Slide to test image description &amp; credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
@@ -6606,7 +6550,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -6636,7 +6579,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -6668,7 +6610,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -6698,7 +6639,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p>some content</p>
                             <p class="image-container">
@@ -6730,7 +6670,6 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -7698,9 +7637,7 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -7795,7 +7732,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -7817,7 +7753,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -7847,7 +7782,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -7875,7 +7809,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -7907,7 +7840,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -7937,7 +7869,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -7969,7 +7900,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -8000,7 +7930,6 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -8968,9 +8897,7 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -9065,7 +8992,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -9087,7 +9013,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -9117,7 +9042,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -9146,7 +9070,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -9174,7 +9097,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit without value</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -9206,7 +9128,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -9236,7 +9157,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p>some content</p>
                             <p class="image-container">
@@ -9268,7 +9188,6 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -10236,9 +10155,7 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -10333,7 +10250,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -10355,7 +10271,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -10385,7 +10300,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -10413,7 +10327,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -10443,7 +10356,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -10471,7 +10383,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -10503,7 +10414,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -10534,7 +10444,6 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -11502,9 +11411,7 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -11599,7 +11506,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -11621,7 +11527,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -11651,7 +11556,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -11679,7 +11583,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -11709,7 +11612,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -11738,7 +11640,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -11766,7 +11667,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <h1 class="title">1.2. Title Content Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p>some content</p>
                             <p class="image-container">
@@ -11798,7 +11698,6 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     </h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p><strong>this line should be visible</strong></p>
                             <ul>
@@ -12766,9 +12665,7 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -12863,7 +12760,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -12885,7 +12781,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -12915,7 +12810,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -12943,7 +12837,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -12973,7 +12866,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -13001,7 +12893,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -13031,7 +12922,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -13060,7 +12950,6 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -14028,9 +13917,7 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -14125,7 +14012,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -14147,7 +14033,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -14177,7 +14062,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -14205,7 +14089,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -14235,7 +14118,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -14263,7 +14145,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -14293,7 +14174,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -14322,7 +14202,6 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -15291,9 +15170,7 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -15388,7 +15265,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -15410,7 +15286,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -15440,7 +15315,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -15468,7 +15342,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -15498,7 +15371,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -15526,7 +15398,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -15556,7 +15427,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -15585,7 +15455,6 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -16555,9 +16424,7 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -16652,7 +16519,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -16674,7 +16540,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -16704,7 +16569,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -16732,7 +16596,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -16762,7 +16625,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -16790,7 +16652,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -16820,7 +16681,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -16849,7 +16709,6 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -17820,9 +17679,7 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -17917,7 +17774,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -17939,7 +17795,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -17969,7 +17824,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -17997,7 +17851,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -18027,7 +17880,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -18055,7 +17907,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -18085,7 +17936,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -18114,7 +17964,6 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -19086,9 +18935,7 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -19183,7 +19030,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -19205,7 +19051,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -19235,7 +19080,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -19263,7 +19107,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -19293,7 +19136,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -19321,7 +19163,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -19351,7 +19192,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -19380,7 +19220,6 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -20353,9 +20192,7 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -20450,7 +20287,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -20472,7 +20308,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -20502,7 +20337,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -20530,7 +20364,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -20560,7 +20393,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -20588,7 +20420,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -20618,7 +20449,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -20647,7 +20477,6 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -21621,9 +21450,7 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -21718,7 +21545,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -21740,7 +21566,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -21770,7 +21595,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -21798,7 +21622,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -21828,7 +21651,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -21856,7 +21678,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -21886,7 +21707,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -21915,7 +21735,6 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -22890,9 +22709,7 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -22987,7 +22804,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -23009,7 +22825,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -23039,7 +22854,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -23067,7 +22881,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -23097,7 +22910,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -23125,7 +22937,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -23155,7 +22966,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -23184,7 +22994,6 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -24160,9 +23969,7 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -24257,7 +24064,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -24279,7 +24085,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -24309,7 +24114,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -24337,7 +24141,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -24367,7 +24170,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -24395,7 +24197,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -24425,7 +24226,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -24454,7 +24254,6 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -25431,9 +25230,7 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -25528,7 +25325,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -25550,7 +25346,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -25580,7 +25375,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -25608,7 +25402,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -25638,7 +25431,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -25666,7 +25458,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -25696,7 +25487,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -25725,7 +25515,6 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -26703,9 +26492,7 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -26800,7 +26587,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -26822,7 +26608,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -26852,7 +26637,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -26880,7 +26664,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -26910,7 +26693,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -26938,7 +26720,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -26968,7 +26749,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -26997,7 +26777,6 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -27976,9 +27755,7 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -28073,7 +27850,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -28095,7 +27871,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -28125,7 +27900,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -28153,7 +27927,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -28183,7 +27956,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -28211,7 +27983,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -28241,7 +28012,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -28270,7 +28040,6 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -29250,9 +29019,7 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -29347,7 +29114,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -29369,7 +29135,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -29399,7 +29164,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -29427,7 +29191,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -29457,7 +29220,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -29485,7 +29247,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -29515,7 +29276,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -29544,7 +29304,6 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -30525,9 +30284,7 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -30622,7 +30379,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -30644,7 +30400,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -30674,7 +30429,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -30702,7 +30456,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -30732,7 +30485,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -30760,7 +30512,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -30790,7 +30541,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -30819,7 +30569,6 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -31801,9 +31550,7 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -31898,7 +31645,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -31920,7 +31666,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -31950,7 +31695,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -31978,7 +31722,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -32008,7 +31751,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -32036,7 +31778,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -32066,7 +31807,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -32095,7 +31835,6 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -33078,9 +32817,7 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -33175,7 +32912,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -33197,7 +32933,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -33227,7 +32962,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -33255,7 +32989,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -33285,7 +33018,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -33313,7 +33045,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -33343,7 +33074,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -33372,7 +33102,6 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -34356,9 +34085,7 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -34453,7 +34180,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -34475,7 +34201,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -34505,7 +34230,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -34533,7 +34257,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -34563,7 +34286,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -34591,7 +34313,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -34621,7 +34342,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -34650,7 +34370,6 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -35635,9 +35354,7 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -35732,7 +35449,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -35754,7 +35470,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -35784,7 +35499,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -35812,7 +35526,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -35842,7 +35555,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -35870,7 +35582,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -35900,7 +35611,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -35929,7 +35639,6 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -36915,9 +36624,7 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -37012,7 +36719,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -37034,7 +36740,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -37064,7 +36769,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -37092,7 +36796,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -37122,7 +36825,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -37150,7 +36852,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -37180,7 +36881,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -37209,7 +36909,6 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
@@ -38196,9 +37895,7 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                             <h1>footer content</h1>
                             <p>
                                 presenter name
-                                -
-                                some description
-
+                                - some description
                             </p>
 
                         </div>
@@ -38293,7 +37990,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                         </div>
                     </div>
@@ -38315,7 +38011,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <h1 class="title">1.1. Title Image Slide</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
@@ -38345,7 +38040,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
                                 <div class="image-credit">
@@ -38373,7 +38067,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <h1 class="title">1.1. Title Image Slide to test image credit</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -38403,7 +38096,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
                                 <div class="image-credit">
@@ -38431,7 +38123,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -38461,7 +38152,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
-
                             <p>some content</p>
                             <p class="image-container">
                             <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
@@ -38490,7 +38180,6 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
                     <div class="content-wrapper">
                         <div class="content">
-
 
                             <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
                             <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">

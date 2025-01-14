@@ -2,6 +2,7 @@ const fs = require('fs')
 const marked = require('marked')
 const plugin = require('revealjs-awesomd/plugin/awesoMD/awesoMD')()
 const yaml = require('js-yaml')
+const config = require('../config')
 
 const options = {}
 const opCoverRegex = /^#\s.*::slide:op-cover$/gm
@@ -22,7 +23,7 @@ function extractFrontmatter(rawMarkdownContent) {
 }
 
 function getHeadingData(rawMarkdown) {
-    const slideSeparator = '---'
+    const slideSeparator = config.slideSeparator
     const updatedMarkdown = plugin.addSlideSeparator(rawMarkdown, { slideSeparator: slideSeparator })
     const [markdown, frontMatter] = extractFrontmatter(updatedMarkdown)
     const headings = []

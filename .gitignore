@@ -22,3 +22,6 @@ tests/unit/node_modules/
 tests/unit/dist/
 
 filenameStore.json
+
+markdown/
+!tests/unit/testFiles/markdown/
