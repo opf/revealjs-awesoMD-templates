@@ -193,7 +193,9 @@ function showHideFooterAndSlideNumber(slideNumber, hideFooter) {
 // eslint-disable-next-line
 function addBackgroundOverlay() {
     const bgElement = document.querySelector('.backgrounds .op-cover .slide-background-content')
-
+    if (!bgElement) {
+        return;
+    }
     // we have used the addBackgroundOverlay function in two events 'ready' and 'resize'
     // because of this the image overlay might get duplicated
     // to avoid duplication of image overlay first check if image overlay exists
