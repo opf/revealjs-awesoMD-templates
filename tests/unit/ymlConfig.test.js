@@ -20,6 +20,7 @@ slidenumber: no
 # OpenProject training ::slide:op-cover
 This is a template for a presentation
 
+
 # ::slide:toc
 
 # Overview traditional project managements ::slide:section`
