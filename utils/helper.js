@@ -194,7 +194,7 @@ function showHideFooterAndSlideNumber(slideNumber, hideFooter) {
 function addBackgroundOverlay() {
     const bgElement = document.querySelector('.backgrounds .op-cover .slide-background-content')
     if (!bgElement) {
-        return;
+        return
     }
     // we have used the addBackgroundOverlay function in two events 'ready' and 'resize'
     // because of this the image overlay might get duplicated
