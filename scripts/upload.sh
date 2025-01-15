@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 OP_URL="https://nextcloud.openproject.org"
 NC_DAV_PATH="remote.php/dav/files"
 
@@ -32,7 +34,7 @@ function throw_if_empty() {
   if [ -z "$value" ]; then
     print_usage
     echo "  Parameter $name empty." 1>&2
-    exit -1
+    exit 1
   fi
 }
 
@@ -47,11 +49,8 @@ function get_folder_path() {
   response_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$FOLDER_PATH" -X GET)
 
   if [ "$response_code" == "404" ]; then
-    resp_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$FOLDER_PATH" -X MKCOL)
-    if [ "$resp_code" != "201" ]; then
-      echo "Failed to create folder $FOLDER_PATH."
-      exit -1
-    fi
+    echo "Error: Could not find the upload folder $FOLDER_PATH." >&2
+    exit 1
   fi
 
   echo "${OP_URL}/${NC_DAV_PATH}/${USER}/${FOLDER_PATH}"
@@ -78,13 +77,17 @@ function delete_temp_pdf() {
   if [ "$response_code" == "200" ]; then
     resp_code=$(curl -s -o /dev/null -w "%{http_code}" -u "$USER:$PASS" "$OP_URL/$NC_DAV_PATH/$USER/$NEXTCLOUD_UPLOAD_TEMP_FOLDER/$temp_filename" -X DELETE)
     if [ "$resp_code" != "204" ]; then
-      echo "Failed to delete file $temp_filename."
+      echo "Error: Failed to delete file $temp_filename."
     fi
   fi
 }
 
 for f in "${FILES[@]}"
 do
+  if [ ! -f "$f" ]; then
+    echo "Error: PDF file '$f' does not exist." >&2
+    exit 1
+  fi
   filename="${f##*/}"
 
   if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
@@ -99,7 +102,14 @@ do
   fi
 
   echo "Uploading $filename"
-  wget --auth-no-challenge --method=PUT --user="$USER" --password="$PASS" --body-file "$f" "$destination"
+  response_code=$(curl -s -o /dev/null -w "%{http_code}" -XPUT -u "$USER:$PASS" --upload-file "$f" "$destination")
+  if [ "$response_code" != "201" ] && [ "$response_code" != "204" ]; then
+    echo "Error: Failed to upload the file $filename." >&2
+    exit 1
+  else
+    echo "Success: PDF file $filename successfully uploaded."
+  fi
+
   body='<?xml version="1.0"?>
         <d:propfind xmlns:d="DAV:" xmlns:oc="http://owncloud.org/ns" xmlns:nc="http://nextcloud.org/ns">
           <d:prop>
@@ -108,5 +118,9 @@ do
         </d:propfind>'
   propfind_response=$(curl -kv -XPROPFIND -u "$USER:$PASS" "$destination" -d "$body")
   file_id=$(echo "$propfind_response" | grep -oP '<oc:fileid>\K[^<]+')
+  if [ -z "$file_id" ]; then
+    echo "Error: Couldn't find file id for file $filename."
+    exit 1
+  fi
   echo "👀 ${f##*.} Preview for \`$filename\` can be previewed in [Temporary ${f##*.}]($OP_URL/f/$file_id)" >> ./scripts/comment.txt
 done
