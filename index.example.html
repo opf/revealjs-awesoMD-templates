@@ -29,6 +29,7 @@
                 updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
                 fitContent()
+                adjustFontSize()
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
@@ -47,7 +48,7 @@
                 hash: true,
 
                 // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [RevealAwesoMD, RevealHighlight, RevealNotes],
+                plugins: [RevealAwesoMD, RevealHighlight, RevealNotes, RevealMermaid],
             })
         </script>
     </body>

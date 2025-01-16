@@ -79,6 +79,9 @@ devDependencies:
   reveal.js:
     specifier: ^5.1.0
     version: 5.1.0
+  reveal.js-mermaid-plugin:
+    specifier: ^2.3.0
+    version: 2.3.0
   sass:
     specifier: ^1.77.0
     version: 1.77.6
@@ -5497,6 +5500,11 @@ packages:
   /reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+    dev: true
+
+  /reveal.js-mermaid-plugin@2.3.0:
+    resolution: {integrity: sha512-61t2jWPCB0+PYsO1lpoUXX7NfhcRwavpEi5r20Au7dEdoYzA3aYwP/vP90mBc+bvCcCPIAgulcixllGob59jkA==}
+    engines: {node: '>=10.0.0'}
     dev: true
 
   /reveal.js@5.1.0:
