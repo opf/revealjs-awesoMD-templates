@@ -4,8 +4,14 @@ const customSlideNumber = document.getElementsByClassName('custom-slide-number')
 
 // eslint-disable-next-line
 function addCustomSlideNumber(event) {
+    const firstSlide = Reveal.getSlide(0, 0)
+    const slideNumberElement = firstSlide.getElementsByClassName('custom-slide-number')
+    let slideNumberIncrement = 1
+    if (slideNumberElement.length === 0) {
+        slideNumberIncrement = 2
+    }
     Array.from(customSlideNumber).forEach(function (currentSlideNumber, index) {
-        currentSlideNumber.innerText = index + 2
+        currentSlideNumber.innerText = index + slideNumberIncrement
     })
 }
 
