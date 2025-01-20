@@ -52,6 +52,12 @@ const getBackgroundContents = async () => {
     })
 }
 
+const getTotalSlides = async () => {
+    return page.evaluate(() => {
+        return document.querySelectorAll('section').length
+    })
+}
+
 beforeAll(async () => {
     await testHelper.copyAssets()
     await startTestServer('test.md')
@@ -77,11 +83,17 @@ beforeEach(async () => {
 })
 
 describe('test markdown presentation', () => {
+    it('should match the total number of slides', async () => {
+        const totalSlides = await getTotalSlides()
+        expect(totalSlides).toEqual(33)
+    })
+
     it('should render markdown presentation', async () => {
         await setScreenSize(screenWidth, screenHeight)
         expect(beautify(await page.content())).toMatchSnapshot()
 
-        for (let i = 0; i < 30; i++) {
+        const totalSlides = await getTotalSlides()
+        for (let i = 0; i < totalSlides - 1; i++) {
             const element = await page.waitForSelector('.navigate-right')
             await element.click()
             await testHelper.waitForTransitionEnd(page, '.progress')

@@ -58677,3 +58677,3810 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
 
 </html>"
 `;
+
+exports[`test markdown presentation should render markdown presentation 32`] = `
+"<!DOCTYPE html>
+<html lang="en" class="reveal-full-page">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>footer content</title>
+
+    <link rel="stylesheet" href="dist/css/vendor.css">
+    <link rel="stylesheet" href="dist/css/metadata.css">
+    <style type="text/css">
+        .hljs-ln {
+            border-collapse: collapse
+        }
+
+        .hljs-ln td {
+            padding: 0
+        }
+
+        .hljs-ln-n:before {
+            content: attr(data-line-number)
+        }
+    </style>
+</head>
+
+<body class="reveal-viewport" style="--slide-width: 960px; --slide-height: 700px; --slide-scale: 1.6457142857142857; --viewport-width: 1920px; --viewport-height: 1200px;">
+    <div class="reveal slide center focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="slide">
+        <div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(1.64571);">
+            <section class="op-cover past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="cover-logo">
+                            <img src="templates/assets/op-logo-dark.png" alt="Logo">
+                        </div>
+
+                        <div class="content">
+                            <h1>footer content</h1>
+                            <p>
+                                presenter name
+                                - some description
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="toc past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">
+                        Table of Contents
+
+                    </h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <ol style="font-size: 18px; margin-top: 0px; margin-bottom: 0px;">
+                                <li>Section Slide<ol>
+                                        <li>Title Content Slide</li>
+                                        <li>Title Content Image Slide</li>
+                                        <li>Title Content Image Slide - scale down font</li>
+                                    </ol>
+                                </li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">2</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">1. </h1>
+                            <h1 class="title">
+                                Section Slide
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">3</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Content Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">4</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">5</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image description &amp; credit</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
+                                <div class="image-credit">
+                                    <p>Source: https://www.example.com</p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">6</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image credit</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p>Source: https://www.example.com</p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">7</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image credit without value</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">8</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">9</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content-image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.2. Title Content Image Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="footer-item footer-title">
+                            <p>footer content</p>
+                        </div>
+                        <div class="footer-item custom-slide-number">10</div>
+                        <div class="footer-item footer-logo">
+                            <img src="templates/assets/op-logo-light.png" alt="Logo">
+                        </div>
+                    </footer>
+
+                </div>
+            </section>
+            <section class="title-content-image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
+                            <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
+                                <li>Lorem</li>
+                                <li>ipsum</li>
+                                <li>dolor</li>
+                                <li>sit</li>
+                                <li>amet</li>
+                                <li>consectetur</li>
+                                <li>adipisicing</li>
+                                <li>elit</li>
+                                <li>sed</li>
+                                <li>eiusmod</li>
+                                <li>tempor</li>
+                                <li>incidunt</li>
+                                <li>ut</li>
+                                <li>labore</li>
+                                <li>et</li>
+                                <li>dolore</li>
+                                <li>magna</li>
+                                <li>aliqua.</li>
+                                <li>Ut</li>
+                                <li>enim</li>
+                                <li>ad</li>
+                                <li>minim</li>
+                                <li>veniam</li>
+                            </ul>
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="" style="width: 25px; height: 22px;">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="footer-item footer-title">
+                            <p>footer content</p>
+                        </div>
+                        <div class="footer-item custom-slide-number">11</div>
+                        <div class="footer-item footer-logo">
+                            <img src="templates/assets/op-logo-light.png" alt="Logo">
+                        </div>
+                    </footer>
+
+                </div>
+            </section>
+            <section class="image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>This is some content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">2. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">12</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">3. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">13</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">4. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">14</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">5. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">15</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">6. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">16</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">7. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">17</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">8. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">18</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">9. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">19</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">10. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">20</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">11. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">21</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">12. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">22</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">13. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">23</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">14. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">24</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">15. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">25</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">16. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">26</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">17. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">27</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">18. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">28</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">19. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">29</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section present" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">20. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">30</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section future" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">31</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+        <div class="backgrounds">
+            <div class="slide-background op-cover past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content">
+                    <div class="image-overlay-container">
+                        <div class="image-container"><img src="templates/assets/OpenProject-Screen.png" alt="cover page" style="border-radius: 15px 0px 0px 15px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background toc past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content-image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content-image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background image past" style="display: none; background-image: url(&quot;markdown/test/test-16-9.png&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content">Please provide background image for this slide</div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section present" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section future" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+        </div>
+        <div class="slide-number" style="display: none;"></div>
+        <aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-right enabled" aria-label="next slide">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-up" aria-label="above slide" disabled="disabled">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-down" aria-label="below slide" disabled="disabled">
+                <div class="controls-arrow"></div>
+            </button>
+        </aside>
+        <div class="progress" style="display: block;"><span style="transform: scaleX(0.96875);"></span></div>
+        <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
+        <div class="pause-overlay"><button class="resume-button">Resume presentation</button></div>
+        <div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">20. Section Slide for long TOC footer content 30 </div>
+    </div>
+    <script src="dist/js/vendor.js"></script>
+    <script src="dist/js/utils.js"></script>
+    <script src="config-reveal.js"></script>
+    <script src="utils/helper.js"></script>
+    <script>
+        // config is defined in config-reveal.js
+        Reveal.addEventListener('ready', function(event) {
+            addBackgroundOverlay()
+            updateImageStructure()
+            updateImageUrl('markdown/test')
+            addCustomSlideNumber(event)
+            fitContent()
+            showHideFooterAndSlideNumber('yes', false)
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.addEventListener('slidechanged', function(event) {
+            setIndex([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }])
+            adjustFontSize()
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.addEventListener('resize', function() {
+            addBackgroundOverlay()
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.configure(config)
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealAwesoMD, RevealHighlight, RevealNotes],
+        })
+    </script>
+    <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script>
+
+</body>
+
+</html>"
+`;
+
+exports[`test markdown presentation should render markdown presentation 33`] = `
+"<!DOCTYPE html>
+<html lang="en" class="reveal-full-page">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>footer content</title>
+
+    <link rel="stylesheet" href="dist/css/vendor.css">
+    <link rel="stylesheet" href="dist/css/metadata.css">
+    <style type="text/css">
+        .hljs-ln {
+            border-collapse: collapse
+        }
+
+        .hljs-ln td {
+            padding: 0
+        }
+
+        .hljs-ln-n:before {
+            content: attr(data-line-number)
+        }
+    </style>
+</head>
+
+<body class="reveal-viewport" style="--slide-width: 960px; --slide-height: 700px; --slide-scale: 1.6457142857142857; --viewport-width: 1920px; --viewport-height: 1200px;">
+    <div class="reveal slide center focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="slide">
+        <div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(1.64571);">
+            <section class="op-cover past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="cover-logo">
+                            <img src="templates/assets/op-logo-dark.png" alt="Logo">
+                        </div>
+
+                        <div class="content">
+                            <h1>footer content</h1>
+                            <p>
+                                presenter name
+                                - some description
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="toc past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">
+                        Table of Contents
+
+                    </h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <ol style="font-size: 18px; margin-top: 0px; margin-bottom: 0px;">
+                                <li>Section Slide<ol>
+                                        <li>Title Content Slide</li>
+                                        <li>Title Content Image Slide</li>
+                                        <li>Title Content Image Slide - scale down font</li>
+                                    </ol>
+                                </li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                                <li>Section Slide for long TOC</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">2</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">1. </h1>
+                            <h1 class="title">
+                                Section Slide
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">3</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Content Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">4</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="this: simple image description">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">5</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image description &amp; credit</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="image description with credit">
+                                <div class="image-credit">
+                                    <p>Source: https://www.example.com</p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">6</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image credit</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p>Source: https://www.example.com</p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">7</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test image credit without value</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">8</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.1. Title Image Slide to test invalid image metadata</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">9</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="title-content-image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.2. Title Content Image Slide</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="footer-item footer-title">
+                            <p>footer content</p>
+                        </div>
+                        <div class="footer-item custom-slide-number">10</div>
+                        <div class="footer-item footer-logo">
+                            <img src="templates/assets/op-logo-light.png" alt="Logo">
+                        </div>
+                    </footer>
+
+                </div>
+            </section>
+            <section class="title-content-image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <h1 class="title">1.3. Title Content Image Slide - scale down font</h1>
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
+                            <ul style="font-size: 11px; margin-top: 0px; margin-bottom: 0px;">
+                                <li>Lorem</li>
+                                <li>ipsum</li>
+                                <li>dolor</li>
+                                <li>sit</li>
+                                <li>amet</li>
+                                <li>consectetur</li>
+                                <li>adipisicing</li>
+                                <li>elit</li>
+                                <li>sed</li>
+                                <li>eiusmod</li>
+                                <li>tempor</li>
+                                <li>incidunt</li>
+                                <li>ut</li>
+                                <li>labore</li>
+                                <li>et</li>
+                                <li>dolore</li>
+                                <li>magna</li>
+                                <li>aliqua.</li>
+                                <li>Ut</li>
+                                <li>enim</li>
+                                <li>ad</li>
+                                <li>minim</li>
+                                <li>veniam</li>
+                            </ul>
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;"><strong>this line should be visible</strong></p>
+                            <p class="image-container">
+                            <div class="image-wrapper"><img src="markdown/test/test-image.jpg" alt="" style="width: 25px; height: 22px;">
+                                <div class="image-credit">
+                                    <p></p>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="footer-item footer-title">
+                            <p>footer content</p>
+                        </div>
+                        <div class="footer-item custom-slide-number">11</div>
+                        <div class="footer-item footer-logo">
+                            <img src="templates/assets/op-logo-light.png" alt="Logo">
+                        </div>
+                    </footer>
+
+                </div>
+            </section>
+            <section class="image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>This is some content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="image past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+                        <div class="content">
+
+                            <p>some content</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">2. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">12</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">3. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">13</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">4. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">14</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">5. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">15</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">6. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">16</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">7. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">17</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">8. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">18</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">9. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">19</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">10. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">20</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">11. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">21</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">12. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">22</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">13. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">23</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">14. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">24</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">15. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">25</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">16. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">26</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">17. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">27</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">18. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">28</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">19. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">29</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section past" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">20. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">30</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+            <section class="section present" data-markdown="" data-markdown-parsed="true" style="top: 0px; display: block;">
+                <div class="content-container">
+                    <div class="content-wrapper">
+
+                        <div class="content">
+                            <h1 class="section-index">21. </h1>
+                            <h1 class="title">
+                                Section Slide for long TOC
+                            </h1>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-item footer-title">
+                        <p>footer content</p>
+                    </div>
+                    <div class="footer-item custom-slide-number">31</div>
+                    <div class="footer-item footer-logo">
+                        <img src="templates/assets/op-logo-light.png" alt="Logo">
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+        <div class="backgrounds">
+            <div class="slide-background op-cover past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content">
+                    <div class="image-overlay-container">
+                        <div class="image-container"><img src="templates/assets/OpenProject-Screen.png" alt="cover page" style="border-radius: 15px 0px 0px 15px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background toc past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" data-loaded="true" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content-image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background title-content-image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background image past" style="display: none; background-image: url(&quot;markdown/test/test-16-9.png&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background image past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content">Please provide background image for this slide</div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: none;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section past" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background section present" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+        </div>
+        <div class="slide-number" style="display: none;"></div>
+        <aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-right" aria-label="next slide" disabled="disabled">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-up" aria-label="above slide" disabled="disabled">
+                <div class="controls-arrow"></div>
+            </button>
+            <button class="navigate-down" aria-label="below slide" disabled="disabled">
+                <div class="controls-arrow"></div>
+            </button>
+        </aside>
+        <div class="progress" style="display: block;"><span style="transform: scaleX(1);"></span></div>
+        <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
+        <div class="pause-overlay"><button class="resume-button">Resume presentation</button></div>
+        <div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">21. Section Slide for long TOC footer content 31 </div>
+    </div>
+    <script src="dist/js/vendor.js"></script>
+    <script src="dist/js/utils.js"></script>
+    <script src="config-reveal.js"></script>
+    <script src="utils/helper.js"></script>
+    <script>
+        // config is defined in config-reveal.js
+        Reveal.addEventListener('ready', function(event) {
+            addBackgroundOverlay()
+            updateImageStructure()
+            updateImageUrl('markdown/test')
+            addCustomSlideNumber(event)
+            fitContent()
+            showHideFooterAndSlideNumber('yes', false)
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.addEventListener('slidechanged', function(event) {
+            setIndex([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }])
+            adjustFontSize()
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.addEventListener('resize', function() {
+            addBackgroundOverlay()
+            setFullPageBackground([{
+                "slideNumber": 2,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "1. ",
+                "headingText": "Section Slide"
+            }, {
+                "slideNumber": 3,
+                "headingLevel": 2,
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Content Slide"
+            }, {
+                "slideNumber": 4,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide"
+            }, {
+                "slideNumber": 5,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image description & credit"
+            }, {
+                "slideNumber": 6,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit"
+            }, {
+                "slideNumber": 7,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test image credit without value"
+            }, {
+                "slideNumber": 8,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "title-content",
+                "index": "1.1. ",
+                "headingText": "Title Image Slide to test invalid image metadata"
+            }, {
+                "slideNumber": 9,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.2. ",
+                "headingText": "Title Content Image Slide"
+            }, {
+                "slideNumber": 10,
+                "headingLevel": 2,
+                "slide": "title-content-image",
+                "index": "1.3. ",
+                "headingText": "Title Content Image Slide - scale down font"
+            }, {
+                "slideNumber": 11,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "background": "test-16-9.png",
+                "pdfbackground": "test-4-3.png",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 12,
+                "headingLevel": 2,
+                "toc": "false",
+                "slide": "image",
+                "index": "",
+                "headingText": ""
+            }, {
+                "slideNumber": 13,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "2. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 14,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "3. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 15,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "4. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 16,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "5. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 17,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "6. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 18,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "7. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 19,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "8. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 20,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "9. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 21,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "10. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 22,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "11. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 23,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "12. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 24,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "13. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 25,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "14. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 26,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "15. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 27,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "16. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 28,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "17. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 29,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "18. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 30,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "19. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 31,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "20. ",
+                "headingText": "Section Slide for long TOC"
+            }, {
+                "slideNumber": 32,
+                "headingLevel": 1,
+                "slide": "section",
+                "index": "21. ",
+                "headingText": "Section Slide for long TOC"
+            }], 'markdown/test', 1123, 794)
+        })
+        Reveal.configure(config)
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealAwesoMD, RevealHighlight, RevealNotes],
+        })
+    </script>
+    <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script>
+
+</body>
+
+</html>"
+`;
