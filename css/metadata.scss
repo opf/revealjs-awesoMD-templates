@@ -131,6 +131,17 @@ $default-font-size: 22px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            .code-wrapper {
+                box-shadow: none;
+                margin: 0;
+
+                .mermaid {
+                    max-height: 100%;
+                    background: #ffffff;
+                    text-align: center;
+                }
+            }
         }
     }
 

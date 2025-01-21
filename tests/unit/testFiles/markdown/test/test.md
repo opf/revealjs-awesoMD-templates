@@ -91,3 +91,14 @@ some content
 # Section Slide for long TOC
 # Section Slide for long TOC
 # Section Slide for long TOC
+
+## Mermaid JS
+
+```mermaid
+flowchart TD
+   A[Start] --> B{Is it?};
+   B -- Yes --> C[OK];
+   C --> D[Rethink];
+   D --> B;
+   B -- No ----> E[End];
+```

@@ -58,6 +58,13 @@ const getTotalSlides = async () => {
     })
 }
 
+// mermaid js generates an unique id for every svg element (e.g. id="mermaid-8iido71fowf")
+// this results in the snapshot test to fail
+// so normalizing the svg element with static id
+const normalizeSvgElement = async (pageContent) => {
+    return pageContent.replace(/mermaid-[\w-]+/g, 'mermaid-unique-id')
+}
+
 beforeAll(async () => {
     await testHelper.copyAssets()
     await startTestServer('test.md')
@@ -85,19 +92,24 @@ beforeEach(async () => {
 describe('test markdown presentation', () => {
     it('should match the total number of slides', async () => {
         const totalSlides = await getTotalSlides()
-        expect(totalSlides).toEqual(33)
+        expect(totalSlides).toEqual(34)
     })
 
     it('should render markdown presentation', async () => {
         await setScreenSize(screenWidth, screenHeight)
-        expect(beautify(await page.content())).toMatchSnapshot()
+        const verifySlideContent = async () => {
+            const pageContent = beautify(await page.content())
+            const normalizedSvgPageContent = await normalizeSvgElement(pageContent)
+            expect(normalizedSvgPageContent).toMatchSnapshot()
+        }
+        await verifySlideContent()
 
         const totalSlides = await getTotalSlides()
         for (let i = 0; i < totalSlides - 1; i++) {
             const element = await page.waitForSelector('.navigate-right')
             await element.click()
             await testHelper.waitForTransitionEnd(page, '.progress')
-            expect(beautify(await page.content())).toMatchSnapshot()
+            await verifySlideContent()
         }
     }, 60000)
 

@@ -78,6 +78,17 @@ function adjustFontSize() {
                         image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
                     })
                 }
+
+                // reduce chart size if font size gets smaller than minimum font size
+                const charts = wrapperElement.querySelectorAll('.mermaid')
+                if (fontSize <= fontSizeToStartReducingImage && charts.length > 0) {
+                    charts.forEach((chart) => {
+                        const chartElement = chart.querySelector('svg')
+                        const bbox = chartElement.getBBox()
+                        const chartHeight = bbox.height
+                        chartElement.style.height = `${scaleFactor * chartHeight}px`
+                    })
+                }
             })
 
         totalHeight = getTotalHeightOfChildren(content)
