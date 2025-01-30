@@ -102,3 +102,26 @@ flowchart TD
    D --> B;
    B -- No ----> E[End];
 ```
+
+## Support for alerts
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+>    [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+> [!something]
+> Advises about risks or negative outcomes of certain actions.
+
+> [!CAUTION]
+
+> Advises about risks or negative outcomes of certain actions.
+
+>> [!CAUTION]
+>> Advises about risks or negative outcomes of certain actions.
+
+> [!CAUTION] Advises about risks or negative outcomes of certain actions.
+
+> [!CAUTION]
+        > Advises about risks or negative outcomes of certain actions.
