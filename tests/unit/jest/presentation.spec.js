@@ -92,7 +92,7 @@ beforeEach(async () => {
 describe('test markdown presentation', () => {
     it('should match the total number of slides', async () => {
         const totalSlides = await getTotalSlides()
-        expect(totalSlides).toEqual(34)
+        expect(totalSlides).toEqual(35)
     })
 
     it('should render markdown presentation', async () => {
