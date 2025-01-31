@@ -25,3 +25,6 @@ filenameStore.json
 
 markdown/
 !tests/unit/testFiles/markdown/
+
+.env
+!tests/unit/.env
