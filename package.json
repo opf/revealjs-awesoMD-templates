@@ -39,6 +39,7 @@
     "devDependencies": {
         "browserify": "^17.0.0",
         "decktape": "^3.14.0",
+        "dotenv": "^16.4.7",
         "front-matter": "^4.0.2",
         "fs-extra": "^11.2.0",
         "gulp": "^4.0.2",
