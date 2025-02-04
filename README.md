@@ -32,6 +32,14 @@ To build the presentation builder run:
 pnpm build
 ```
 
+## Setup Presentations Root Directory
+
+First, copy `.env.example` file and set presentations root directory path at `PRESENTATIONS_ROOT`
+
+```bash
+cp .env.example .env
+```
+
 ## Serve
 
 To serve the presentation builder run:

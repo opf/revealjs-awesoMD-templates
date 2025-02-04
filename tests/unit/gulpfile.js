@@ -4,6 +4,7 @@ const connect = require('gulp-connect')
 const utils = require('./testFiles/utils/utils')
 const mustache = require('gulp-mustache')
 const rename = require('gulp-rename')
+const env = require('dotenv').config()
 const config = require('./testFiles/config')
 
 const ROOT = yargs.argv.root || config.root
@@ -15,6 +16,7 @@ const FILE = yargs.options({
         type: 'string',
     },
 }).argv.file
+const presentationsRoot = env.parsed.PRESENTATIONS_ROOT || 'markdown'
 
 function renderIndexHTML(folderName, rawMarkdown) {
     const fmt = utils.extractFrontmatter(rawMarkdown)
@@ -26,7 +28,7 @@ function renderIndexHTML(folderName, rawMarkdown) {
                 md_content: rawMarkdown,
                 headingData: JSON.stringify(headingData),
                 presentation_title: fmt[1].metadata.footer,
-                imagePath: `markdown/${folderName}`,
+                imagePath: `${presentationsRoot}/${folderName}`,
                 slideNumber: fmt[1].metadata.slidenumber ?? 'yes',
                 hideFooter: fmt[1].metadata.footer === undefined || fmt[1].metadata.footer === null,
                 config: config,
@@ -38,14 +40,14 @@ function renderIndexHTML(folderName, rawMarkdown) {
 
 function addTOC(folderName, rawMarkdown) {
     const metadata = utils.extractFrontmatter(rawMarkdown)
-    const [title, content] = utils.generateTOC(rawMarkdown, 'testFiles/markdown/config.yml')
+    const [title, content] = utils.generateTOC(rawMarkdown, `testFiles/${presentationsRoot}/config.yml`)
     gulp.src('testFiles/templates/title-content-template.html')
         .pipe(
             mustache({
                 title: title,
                 content: content,
                 metadata: metadata[1].metadata,
-                imagePath: `markdown/${folderName}`,
+                imagePath: `${presentationsRoot}/${folderName}`,
             })
         )
         .pipe(rename('toc-template.html'))
@@ -59,8 +61,8 @@ gulp.task('serve', () => {
     }
     const folderName = FILE.split('.md')[0]
     const rawMarkdown = utils.preProcessMarkdown(
-        `testFiles/markdown/${folderName}/${FILE}`,
-        'testFiles/markdown/config.yml'
+        `testFiles/${presentationsRoot}/${folderName}/${FILE}`,
+        `testFiles/${presentationsRoot}/config.yml`
     )
     addTOC(folderName, rawMarkdown)
     renderIndexHTML(folderName, rawMarkdown)
