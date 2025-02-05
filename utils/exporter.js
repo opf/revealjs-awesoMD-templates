@@ -4,9 +4,11 @@ const fs = require('fs-extra')
 const prettier = require('prettier')
 const { JSDOM } = require('jsdom')
 const config = require('../config')
+const env = require('dotenv').config()
 
 const url = process.env.PRESENTATION_URL || config.presentationUrl
 const outputUrl = process.env.OUTPUT_URI || config.outputUri
+const presentationsRoot = env.parsed.PRESENTATIONS_ROOT || 'markdown'
 
 function getExportFileName() {
     const storedFilename = JSON.parse(fs.readFileSync('filenameStore.json', 'utf8'))
@@ -58,8 +60,8 @@ async function exportAsHTML(url, outputUrl) {
         await fs.copy('./dist', `./${outputUri}/dist`, { overwrite: false })
         await fs.copy('./utils/helper.js', `./${outputUri}/utils/helper.js`, { overwrite: false })
 
-        const sourceDir = './markdown/' + fileName
-        const destinationDir = `${outputUri}/markdown/`
+        const sourceDir = `./${presentationsRoot}/` + fileName
+        const destinationDir = `${outputUri}/${presentationsRoot}/`
         await fs.copy(`${sourceDir}/`, `./${destinationDir}/${fileName}`, { overwrite: false })
         await fs.copy('./templates/assets', `./${outputUri}/templates/assets`, { overwrite: false })
 
