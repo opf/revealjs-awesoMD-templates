@@ -1,8 +1,7 @@
 #!/bin/bash
 
 set -e
-
-echo "Upload Script started"
+set -x
 
 OP_URL="https://nextcloud.openproject.org"
 NC_DAV_PATH="remote.php/dav/files"
