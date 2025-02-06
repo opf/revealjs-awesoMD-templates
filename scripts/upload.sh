@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -x
 
 OP_URL="https://nextcloud.openproject.org"
 NC_DAV_PATH="remote.php/dav/files"
