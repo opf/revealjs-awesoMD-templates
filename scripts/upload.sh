@@ -43,6 +43,7 @@ throw_if_empty "1 (user name) and ENV[NEXTCLOUD_USERNAME]" $USER
 throw_if_empty "2 (password) and ENV[NEXTCLOUD_APP_ACCESS_KEY]" $PASS
 throw_if_empty "ENV[NEXTCLOUD_UPLOAD_FINAL_FOLDER]" $NEXTCLOUD_UPLOAD_FINAL_FOLDER
 throw_if_empty "ENV[NEXTCLOUD_UPLOAD_TEMP_FOLDER]" $NEXTCLOUD_UPLOAD_TEMP_FOLDER
+throw_if_empty "ENV[DEFAULT_BRANCH]" $DEFAULT_BRANCH
 
 function get_folder_path() {
   local FOLDER_PATH="$1"
@@ -97,6 +98,8 @@ do
     fi
     temp_filename=$(get_file_prefix "$GITHUB_HEAD_REF")
     destination="$(get_folder_path "$NEXTCLOUD_UPLOAD_TEMP_FOLDER")/${temp_filename}"
+  elif [ "$GITHUB_EVENT_NAME" = "push" ] && [ "$GITHUB_REF" = "refs/heads/$DEFAULT_BRANCH" ]; then
+    destination="$(get_folder_path "$NEXTCLOUD_UPLOAD_FINAL_FOLDER")/${filename}"
   else
     delete_temp_pdf
     destination="$(get_folder_path "$NEXTCLOUD_UPLOAD_FINAL_FOLDER")/${filename}"
