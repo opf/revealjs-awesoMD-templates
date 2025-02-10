@@ -991,22 +991,27 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -1017,6 +1022,7 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -1024,11 +1030,13 @@ exports[`test markdown presentation should render markdown presentation 1`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -3042,22 +3050,27 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -3068,6 +3081,7 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -3075,11 +3089,13 @@ exports[`test markdown presentation should render markdown presentation 2`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -5093,22 +5109,27 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -5119,6 +5140,7 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -5126,11 +5148,13 @@ exports[`test markdown presentation should render markdown presentation 3`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -7142,22 +7166,27 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -7168,6 +7197,7 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -7175,11 +7205,13 @@ exports[`test markdown presentation should render markdown presentation 4`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -9189,22 +9221,27 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -9215,6 +9252,7 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -9222,11 +9260,13 @@ exports[`test markdown presentation should render markdown presentation 5`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -11234,22 +11274,27 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -11260,6 +11305,7 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -11267,11 +11313,13 @@ exports[`test markdown presentation should render markdown presentation 6`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -13277,22 +13325,27 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -13303,6 +13356,7 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -13310,11 +13364,13 @@ exports[`test markdown presentation should render markdown presentation 7`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -15318,22 +15374,27 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -15344,6 +15405,7 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -15351,11 +15413,13 @@ exports[`test markdown presentation should render markdown presentation 8`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -17357,22 +17421,27 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -17383,6 +17452,7 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -17390,11 +17460,13 @@ exports[`test markdown presentation should render markdown presentation 9`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -19394,22 +19466,27 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -19420,6 +19497,7 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -19427,11 +19505,13 @@ exports[`test markdown presentation should render markdown presentation 10`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -21429,22 +21509,27 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -21455,6 +21540,7 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -21462,11 +21548,13 @@ exports[`test markdown presentation should render markdown presentation 11`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -23464,22 +23552,27 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -23490,6 +23583,7 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -23497,11 +23591,13 @@ exports[`test markdown presentation should render markdown presentation 12`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -25499,22 +25595,27 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -25525,6 +25626,7 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -25532,11 +25634,13 @@ exports[`test markdown presentation should render markdown presentation 13`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -27535,22 +27639,27 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -27561,6 +27670,7 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -27568,11 +27678,13 @@ exports[`test markdown presentation should render markdown presentation 14`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -29572,22 +29684,27 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -29598,6 +29715,7 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -29605,11 +29723,13 @@ exports[`test markdown presentation should render markdown presentation 15`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -31610,22 +31730,27 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -31636,6 +31761,7 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -31643,11 +31769,13 @@ exports[`test markdown presentation should render markdown presentation 16`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -33649,22 +33777,27 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -33675,6 +33808,7 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -33682,11 +33816,13 @@ exports[`test markdown presentation should render markdown presentation 17`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -35689,22 +35825,27 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -35715,6 +35856,7 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -35722,11 +35864,13 @@ exports[`test markdown presentation should render markdown presentation 18`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -37730,22 +37874,27 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -37756,6 +37905,7 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -37763,11 +37913,13 @@ exports[`test markdown presentation should render markdown presentation 19`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -39772,22 +39924,27 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -39798,6 +39955,7 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -39805,11 +39963,13 @@ exports[`test markdown presentation should render markdown presentation 20`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -41815,22 +41975,27 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -41841,6 +42006,7 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -41848,11 +42014,13 @@ exports[`test markdown presentation should render markdown presentation 21`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -43859,22 +44027,27 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -43885,6 +44058,7 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -43892,11 +44066,13 @@ exports[`test markdown presentation should render markdown presentation 22`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -45904,22 +46080,27 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -45930,6 +46111,7 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -45937,11 +46119,13 @@ exports[`test markdown presentation should render markdown presentation 23`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -47950,22 +48134,27 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -47976,6 +48165,7 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -47983,11 +48173,13 @@ exports[`test markdown presentation should render markdown presentation 24`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -49997,22 +50189,27 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -50023,6 +50220,7 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -50030,11 +50228,13 @@ exports[`test markdown presentation should render markdown presentation 25`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -52045,22 +52245,27 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -52071,6 +52276,7 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -52078,11 +52284,13 @@ exports[`test markdown presentation should render markdown presentation 26`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -54094,22 +54302,27 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -54120,6 +54333,7 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -54127,11 +54341,13 @@ exports[`test markdown presentation should render markdown presentation 27`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -56144,22 +56360,27 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -56170,6 +56391,7 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -56177,11 +56399,13 @@ exports[`test markdown presentation should render markdown presentation 28`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -58195,22 +58419,27 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -58221,6 +58450,7 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -58228,11 +58458,13 @@ exports[`test markdown presentation should render markdown presentation 29`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -60247,22 +60479,27 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -60273,6 +60510,7 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -60280,11 +60518,13 @@ exports[`test markdown presentation should render markdown presentation 30`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -62300,22 +62540,27 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -62326,6 +62571,7 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -62333,11 +62579,13 @@ exports[`test markdown presentation should render markdown presentation 31`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -64354,22 +64602,27 @@ exports[`test markdown presentation should render markdown presentation 32`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -64380,6 +64633,7 @@ exports[`test markdown presentation should render markdown presentation 32`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -64387,11 +64641,13 @@ exports[`test markdown presentation should render markdown presentation 32`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -66409,22 +66665,27 @@ exports[`test markdown presentation should render markdown presentation 33`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -66435,6 +66696,7 @@ exports[`test markdown presentation should render markdown presentation 33`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -66442,11 +66704,13 @@ exports[`test markdown presentation should render markdown presentation 33`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -68462,22 +68726,27 @@ exports[`test markdown presentation should render markdown presentation 34`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -68488,6 +68757,7 @@ exports[`test markdown presentation should render markdown presentation 34`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -68495,11 +68765,13 @@ exports[`test markdown presentation should render markdown presentation 34`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
@@ -70513,22 +70785,27 @@ exports[`test markdown presentation should render markdown presentation 35`] = `
                     <div class="content-wrapper">
                         <div class="content">
 
+
+
                             <div class="alert note" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Note</div>
                                 <blockquote>Useful information that users should know, even when skimming content.</blockquote>
                             </div>
+
                             <div class="alert caution" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
                                     </svg> Caution</div>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <blockquote>[!something]</blockquote>
                                 <blockquote>Advises about risks or negative outcomes of certain actions.</blockquote>
                             </div>
+
                             <div class="alert" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <blockquote>
                                     <p>[!CAUTION]</p>
@@ -70539,6 +70816,7 @@ exports[`test markdown presentation should render markdown presentation 35`] = `
                                     <p>Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="--padding-top: 0px; --padding-bottom: 0px; font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <blockquote style="padding-top: 0px; padding-bottom: 0px; border-width: 0px 0px 0px 6px; border-style: solid; border-color: initial; border-image: initial;">
                                     <blockquote>
@@ -70546,11 +70824,13 @@ exports[`test markdown presentation should render markdown presentation 35`] = `
                                     </blockquote>
                                 </blockquote>
                             </div>
+
                             <div class="alert" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <blockquote>
                                     <p>[!CAUTION] Advises about risks or negative outcomes of certain actions.</p>
                                 </blockquote>
                             </div>
+
                             <div class="alert caution" style="font-size: 17px; margin-top: 7px; margin-bottom: 7px;">
                                 <div class="alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
