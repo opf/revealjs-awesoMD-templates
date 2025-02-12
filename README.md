@@ -19,8 +19,8 @@ It is based on [reveal.js](https://revealjs.com/) and have the following feature
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/opf/training.git
-cd training
+git clone https://github.com/opf/revealjs-awesoMD-templates.git
+cd revealjs-awesoMD-templates
 pnpm install
 ```
 
