@@ -26,6 +26,7 @@
             Reveal.addEventListener('ready', function (event) {
                 addBackgroundOverlay()
                 updateImageStructure()
+                annotateImage({{{ imageAnnotationData }}})
                 updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
                 fitContent()
@@ -35,6 +36,7 @@
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
+                annotateImage({{{ imageAnnotationData }}})
                 adjustFontSize()
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })

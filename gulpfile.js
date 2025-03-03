@@ -69,17 +69,19 @@ gulp.task('browserifyUtils', () => browserifyUtils())
 function renderIndexHTML(folderName, rawMarkdown) {
     const fmt = utils.extractFrontmatter(rawMarkdown)
     const headingData = utils.getHeadingData(rawMarkdown)
+    const [markdown, imageAnnotationData] = utils.getImageAnnotationData(rawMarkdown)
 
     gulp.src('index.example.html')
         .pipe(
             mustache({
-                md_content: rawMarkdown,
+                md_content: markdown,
                 headingData: JSON.stringify(headingData),
                 presentation_title: fmt[1].metadata.footer,
                 imagePath: `${presentationsRoot}/${folderName}`,
                 slideNumber: fmt[1].metadata.slidenumber ?? 'yes',
                 hideFooter: fmt[1].metadata.footer === undefined || fmt[1].metadata.footer === null,
                 config: config,
+                imageAnnotationData: JSON.stringify(imageAnnotationData),
             })
         )
         .pipe(rename('index.html'))

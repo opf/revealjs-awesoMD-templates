@@ -215,6 +215,65 @@ function preProcessMarkdown(file, configFile) {
     return rawMarkdown
 }
 
+function getImageAnnotationData(rawMarkdown) {
+    const imageAndAnnotationRegex = /!\[(.*)\]\((.+)\)\n*```annotation\n([\s\S]*?)```/g
+    const annotationBlockRegex = /```annotation\n([\s\S]*?)```/g
+    const markdownImageRegex = /!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g
+
+    const updatedMarkdown = plugin.addSlideSeparator(rawMarkdown, { slideSeparator: config.slideSeparator })
+    const markdown = extractFrontmatter(updatedMarkdown)[0]
+    const separatorRegex = new RegExp(`^${config.slideSeparator}\n`, 'gm')
+    const slides = markdown.split(separatorRegex)
+
+    const imageAnnotationData = {}
+
+    slides.forEach((slide, slideNumber) => {
+        const processedImages = new Set()
+        let matches
+
+        // Match images with annotation blocks
+        while ((matches = imageAndAnnotationRegex.exec(slide)) !== null) {
+            const imageUrl = matches[2]
+            const annotationDataArray = matches[3].trim().split('\n')
+
+            const annotationData = annotationDataArray.map((item) => {
+                const [x, y, text] = item.split('|')
+                return { x, y, text }
+            })
+
+            if (!imageAnnotationData[slideNumber]) {
+                imageAnnotationData[slideNumber] = {}
+            }
+
+            imageAnnotationData[slideNumber][imageUrl] = annotationData
+            processedImages.add(imageUrl)
+        }
+
+        // Match all images (even those without annotations)
+        while ((matches = markdownImageRegex.exec(slide)) !== null) {
+            const imageUrl = matches[1]
+            if (!processedImages.has(imageUrl)) {
+                if (!imageAnnotationData[slideNumber]) {
+                    imageAnnotationData[slideNumber] = {}
+                }
+
+                // Only add if it hasn't been added yet
+                if (!(imageUrl in imageAnnotationData[slideNumber])) {
+                    imageAnnotationData[slideNumber][imageUrl] = []
+                }
+            }
+        }
+
+        // Ensure each slide key exists
+        if (!imageAnnotationData[slideNumber]) {
+            imageAnnotationData[slideNumber] = {}
+        }
+    })
+
+    const markdownWithoutAnnotation = rawMarkdown.replace(annotationBlockRegex, '')
+    return [markdownWithoutAnnotation, imageAnnotationData]
+}
+
 module.exports = {
     readMarkdownFile,
     extractFrontmatter,
@@ -225,4 +284,5 @@ module.exports = {
     insertSlideTypeAccordingToHeadingLevel,
     getYAMLConfigs,
     preProcessMarkdown,
+    getImageAnnotationData,
 }

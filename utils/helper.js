@@ -36,7 +36,9 @@ function adjustFontSize() {
         const style = getComputedStyle(element)
         const marginTop = parseFloat(style.marginTop)
         const marginBottom = parseFloat(style.marginBottom)
-        return element.offsetHeight + marginTop + marginBottom
+        const paddingTop = parseFloat(style.paddingTop)
+        const paddingBottom = parseFloat(style.paddingBottom)
+        return element.offsetHeight + marginTop + marginBottom + paddingTop + paddingBottom
     }
 
     const contentWrapper = currentSlide.querySelector('.content-wrapper')
@@ -52,44 +54,45 @@ function adjustFontSize() {
 
     while (totalHeight > contentWrapperHeight) {
         const scaleFactor = contentWrapperHeight / totalHeight
-
         fontSize = Math.floor(scaleFactor * fontSize)
-        Array.from(content.children)
-            .filter(
-                (wrapperElement) => !wrapperElement.querySelector('.image-container .image-wrapper .image-credit p')
-            )
-            .forEach((wrapperElement) => {
-                wrapperElement.style.fontSize = `${fontSize}px`
 
-                // reduce the margin values
-                const style = getComputedStyle(wrapperElement)
-                const marginTop = Math.floor(parseFloat(style.marginTop) * scaleFactor)
-                const marginBottom = Math.floor(parseFloat(style.marginBottom) * scaleFactor)
-                wrapperElement.style.marginTop = `${marginTop}px`
-                wrapperElement.style.marginBottom = `${marginBottom}px`
+        const wrapperElements = Array.from(content.children)
 
-                // reduce image size if font size gets smaller than minimum font size
-                const images = content.querySelectorAll('.image-container .image-wrapper img')
-                if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
-                    images.forEach((image) => {
-                        const currentWidth = image.offsetWidth
-                        const currentHeight = image.offsetHeight
-                        image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
-                        image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
-                    })
-                }
+        wrapperElements.forEach((wrapperElement) => {
+            if (wrapperElement.querySelector('.image-container .image-wrapper .image-credit p')) {
+                return
+            }
+            wrapperElement.style.fontSize = `${fontSize}px`
 
-                // reduce chart size if font size gets smaller than minimum font size
-                const charts = wrapperElement.querySelectorAll('.mermaid')
-                if (fontSize <= fontSizeToStartReducingImage && charts.length > 0) {
-                    charts.forEach((chart) => {
-                        const chartElement = chart.querySelector('svg')
-                        const bbox = chartElement.getBBox()
-                        const chartHeight = bbox.height
-                        chartElement.style.height = `${scaleFactor * chartHeight}px`
-                    })
-                }
+            const style = getComputedStyle(wrapperElement)
+            const marginTop = Math.floor(parseFloat(style.marginTop) * scaleFactor)
+            const marginBottom = Math.floor(parseFloat(style.marginBottom) * scaleFactor)
+            wrapperElement.style.marginTop = `${marginTop}px`
+            wrapperElement.style.marginBottom = `${marginBottom}px`
+        })
+
+        // reduce image size if font size gets smaller than minimum font size
+        const images = content.querySelectorAll('.image-container .image-wrapper img')
+        if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
+            images.forEach((image) => {
+                const currentWidth = image.offsetWidth
+                const currentHeight = image.offsetHeight
+                image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
+                image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
             })
+        }
+
+        const canvases = content.querySelectorAll('.image-container .image-wrapper canvas')
+        canvases.forEach((canvas) => {
+            const currentHeight = parseFloat(canvas.style.height) || canvas.offsetHeight
+            canvas.style.height = `${currentHeight * scaleFactor}px`
+        })
+
+        const charts = content.querySelectorAll('.mermaid svg')
+        charts.forEach((chartElement) => {
+            const bbox = chartElement.getBBox()
+            chartElement.style.height = `${scaleFactor * bbox.height}px`
+        })
 
         totalHeight = getTotalHeightOfChildren(content)
     }
@@ -167,6 +170,295 @@ function getImageMetadata(altText) {
     if (imageMetadataRegex.test(altText)) {
         const imageMetadata = altText.match(imageMetadataRegex)
         return imageMetadata[2].trim()
+    }
+}
+
+// eslint-disable-next-line
+function annotateImage(imageAnnotationData) {
+    const currentSlide = Reveal.getCurrentSlide()
+    const imageWrappers = currentSlide.querySelectorAll('.image-wrapper')
+
+    for (const imageWrapper of imageWrappers) {
+        // Prevent from re-annotation
+        if (imageWrapper.dataset.annotated) {
+            continue
+        }
+        const image = imageWrapper.querySelector('img')
+        if (!image) {
+            continue
+        }
+
+        // Make sure that the images are loaded
+        if (image.complete && image.naturalWidth > 0 && image.naturalHeight > 0) {
+            annotate(imageAnnotationData, currentSlide, imageWrapper, image)
+        } else {
+            image.onload = () => {
+                if (image.naturalWidth > 0 && image.naturalHeight > 0) {
+                    annotate(imageAnnotationData, currentSlide, imageWrapper, image)
+                } else {
+                    imageWrapper.textContent = 'Failed to annotate image.'
+                }
+            }
+        }
+    }
+}
+
+function annotate(imageAnnotationData, currentSlide, imageWrapper, image) {
+    const padding = 100
+    const dotRadius = 5
+    const textPadding = 10
+    const boxMargin = 20
+    const fontSize = 22
+    const fontFamily = 'sans-serif'
+    const maxBoxWidth = 250
+    const lineHeight = fontSize * 1.2
+    const minPadding = 10
+
+    const imgWidth = image.naturalWidth
+    const imgHeight = image.naturalHeight
+
+    const currentSlideIndex = Reveal.getIndices(currentSlide)
+    const annotations = imageAnnotationData[currentSlideIndex.h]?.[image.src.split('/').pop()]
+    const hasAnnotations = annotations && annotations.length > 0
+
+    // Don't create canvas when there are no annotation for the image
+    if (!hasAnnotations) {
+        return
+    }
+    const effectivePadding = hasAnnotations ? padding : 0
+
+    const canvas = document.createElement('canvas')
+    canvas.width = imgWidth + effectivePadding * 2
+    canvas.height = imgHeight + effectivePadding * 2
+
+    image.remove()
+    imageWrapper.appendChild(canvas)
+    const imageCredit = imageWrapper.querySelector('.image-credit')
+    if (imageCredit) imageWrapper.appendChild(imageCredit)
+    imageWrapper.dataset.annotated = 'true'
+
+    const ctx = canvas.getContext('2d')
+    ctx.fillStyle = 'white'
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.drawImage(image, effectivePadding, effectivePadding, imgWidth, imgHeight)
+
+    const boxPositions = []
+    ctx.font = `${fontSize}px ${fontFamily}`
+
+    function getTextDimensions(text) {
+        const words = text.split(' ')
+        const lines = []
+        let currentLine = words[0]
+
+        for (let i = 1; i < words.length; i++) {
+            const word = words[i]
+            const testLine = `${currentLine} ${word}`
+            const width = ctx.measureText(testLine).width
+            if (width > maxBoxWidth - textPadding * 2) {
+                lines.push(currentLine)
+                currentLine = word
+            } else {
+                currentLine = testLine
+            }
+        }
+        lines.push(currentLine)
+        const longestLine = lines.reduce((a, b) => (a.length > b.length ? a : b), '')
+        const textWidth = Math.min(ctx.measureText(longestLine).width, maxBoxWidth - textPadding * 2)
+        const boxWidth = textWidth + textPadding * 2
+        const boxHeight = lines.length * lineHeight + textPadding * 2
+        return { lines, boxWidth, boxHeight }
+    }
+
+    // checks if the annotation boxes overlaps
+    function boxesOverlap(box1, box2) {
+        return (
+            box1.x < box2.x + box2.width &&
+            box1.x + box1.width > box2.x &&
+            box1.y < box2.y + box2.height &&
+            box1.y + box1.height > box2.y
+        )
+    }
+
+    const imgLeft = effectivePadding
+    const imgRight = effectivePadding + imgWidth
+    const imgTop = effectivePadding
+    const imgBottom = effectivePadding + imgHeight
+
+    function isOutsideImage(x, y, width, height) {
+        return x + width <= imgLeft || x >= imgRight || y + height <= imgTop || y >= imgBottom
+    }
+
+    // Sort annotations by box size for better positioning of the boxes
+    annotations.sort((box1, box2) => {
+        const box1Size = box1.text.length
+        const box2Size = box2.text.length
+        return box1Size - box2Size
+    })
+
+    for (const { x, y, text } of annotations) {
+        const dotX = Number(x) + effectivePadding
+        const dotY = Number(y) + effectivePadding
+
+        // Draw red dot
+        ctx.fillStyle = 'red'
+        ctx.beginPath()
+        ctx.arc(dotX, dotY, dotRadius, 0, 2 * Math.PI)
+        ctx.fill()
+
+        const { lines, boxWidth, boxHeight } = getTextDimensions(text)
+
+        // Calculate available space in each region
+        const spaceTop = Math.max(0, imgTop - minPadding - boxHeight - boxMargin)
+        const spaceBottom = Math.max(0, canvas.height - imgBottom - minPadding - boxHeight - boxMargin)
+        const spaceLeft = Math.max(0, imgLeft - minPadding - boxWidth - boxMargin)
+        const spaceRight = Math.max(0, canvas.width - imgRight - minPadding - boxWidth - boxMargin)
+
+        const possiblePositions = [
+            // Top positions
+            {
+                x: dotX - boxWidth / 2,
+                y: imgTop - boxHeight - boxMargin,
+                region: 'top',
+                score:
+                    spaceTop * 2 +
+                    (boxHeight <= spaceTop ? 100 : 0) +
+                    (boxWidth <= canvas.width - minPadding * 2 ? 50 : 0),
+            },
+            {
+                x: minPadding,
+                y: imgTop - boxHeight - boxMargin,
+                region: 'top-left',
+                score: spaceTop * 1.5 + (boxHeight <= spaceTop ? 80 : 0),
+            },
+            {
+                x: canvas.width - minPadding - boxWidth,
+                y: imgTop - boxHeight - boxMargin,
+                region: 'top-right',
+                score: spaceTop * 1.5 + (boxHeight <= spaceTop ? 80 : 0),
+            },
+
+            // Bottom positions
+            {
+                x: dotX - boxWidth / 2,
+                y: imgBottom + boxMargin,
+                region: 'bottom',
+                score:
+                    spaceBottom * 2 +
+                    (boxHeight <= spaceBottom ? 100 : 0) +
+                    (boxWidth <= canvas.width - minPadding * 2 ? 50 : 0),
+            },
+            {
+                x: minPadding,
+                y: imgBottom + boxMargin,
+                region: 'bottom-left',
+                score: spaceBottom * 1.5 + (boxHeight <= spaceBottom ? 80 : 0),
+            },
+            {
+                x: canvas.width - minPadding - boxWidth,
+                y: imgBottom + boxMargin,
+                region: 'bottom-right',
+                score: spaceBottom * 1.5 + (boxHeight <= spaceBottom ? 80 : 0),
+            },
+
+            // Side positions
+            {
+                x: imgRight + boxMargin,
+                y: dotY - boxHeight / 2,
+                region: 'right',
+                score: spaceRight * 1.2 + (boxWidth <= spaceRight ? 70 : -100),
+            },
+            {
+                x: imgLeft - boxWidth - boxMargin,
+                y: dotY - boxHeight / 2,
+                region: 'left',
+                score: spaceLeft * 1.2 + (boxWidth <= spaceLeft ? 70 : -100),
+            },
+        ]
+
+        const validPositions = possiblePositions
+            .map((pos) => ({
+                ...pos,
+                x: Math.max(minPadding, Math.min(pos.x, canvas.width - minPadding - boxWidth)),
+                y: Math.max(minPadding, Math.min(pos.y, canvas.height - minPadding - boxHeight)),
+            }))
+            .filter(
+                (pos) =>
+                    isOutsideImage(pos.x, pos.y, boxWidth, boxHeight) &&
+                    pos.x >= minPadding &&
+                    pos.y >= minPadding &&
+                    pos.x + boxWidth <= canvas.width - minPadding &&
+                    pos.y + boxHeight <= canvas.height - minPadding
+            )
+            .sort((a, b) => b.score - a.score)
+
+        let boxPosition = null
+
+        for (const pos of validPositions) {
+            const candidateBox = {
+                x: pos.x,
+                y: pos.y,
+                width: boxWidth,
+                height: boxHeight,
+            }
+
+            const overlaps = boxPositions.some((b) => boxesOverlap(b, candidateBox))
+            if (!overlaps) {
+                boxPosition = pos
+                break
+            }
+        }
+
+        boxPosition.x = Math.max(minPadding, Math.min(boxPosition.x, canvas.width - minPadding - boxWidth))
+        boxPosition.y = Math.max(minPadding, Math.min(boxPosition.y, canvas.height - minPadding - boxHeight))
+
+        boxPositions.push({
+            x: boxPosition.x,
+            y: boxPosition.y,
+            width: boxWidth,
+            height: boxHeight,
+        })
+
+        // Draw connecting line with possible angles
+        ctx.strokeStyle = 'red'
+        ctx.lineWidth = 1.5
+        ctx.beginPath()
+        ctx.moveTo(dotX, dotY)
+
+        if (boxPosition.region.includes('top')) {
+            // Connect to bottom of top-positioned box
+            const targetY = boxPosition.y + boxHeight
+            const targetX = Math.max(boxPosition.x, Math.min(boxPosition.x + boxWidth, dotX))
+            ctx.lineTo(targetX, targetY)
+        } else if (boxPosition.region.includes('bottom')) {
+            // Connect to top of bottom-positioned box
+            const targetY = boxPosition.y
+            const targetX = Math.max(boxPosition.x, Math.min(boxPosition.x + boxWidth, dotX))
+            ctx.lineTo(targetX, targetY)
+        } else if (boxPosition.region === 'right') {
+            // Connect to left of right-positioned box
+            const targetX = boxPosition.x
+            const targetY = Math.max(boxPosition.y, Math.min(boxPosition.y + boxHeight, dotY))
+            ctx.lineTo(targetX, targetY)
+        } else if (boxPosition.region === 'left') {
+            // Connect to right of left-positioned box
+            const targetX = boxPosition.x + boxWidth
+            const targetY = Math.max(boxPosition.y, Math.min(boxPosition.y + boxHeight, dotY))
+            ctx.lineTo(targetX, targetY)
+        }
+
+        ctx.stroke()
+
+        // Draw annotation box
+        ctx.fillStyle = 'white'
+        ctx.fillRect(boxPosition.x, boxPosition.y, boxWidth, boxHeight)
+        ctx.strokeStyle = 'red'
+        ctx.strokeRect(boxPosition.x, boxPosition.y, boxWidth, boxHeight)
+
+        // Draw wrapped text
+        ctx.fillStyle = 'black'
+        lines.forEach((line, i) => {
+            ctx.fillText(line, boxPosition.x + textPadding, boxPosition.y + textPadding + i * lineHeight + fontSize)
+        })
     }
 }
 
