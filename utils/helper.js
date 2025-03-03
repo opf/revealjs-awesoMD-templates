@@ -1,5 +1,6 @@
 /* global Reveal */
 
+const imageMetadataRegex = /::(\w[\w-]*):\s?([^:\]\)]+(?:[:|,][^:\]\)]+)*)/gm
 const customSlideNumber = document.getElementsByClassName('custom-slide-number')
 
 // eslint-disable-next-line
@@ -145,7 +146,6 @@ function setIndex(headingData) {
 // eslint-disable-next-line
 function updateImageUrl(imagePath) {
     const images = document.querySelectorAll('.image-wrapper img')
-    const imageMetadataRegex = /::(\w+)(?:\s*(.*?))?:\s*(.*)/m
     images.forEach((img) => {
         const url = new URL(img.src)
 
@@ -163,10 +163,61 @@ function updateImageUrl(imagePath) {
 }
 
 function getImageMetadata(altText) {
-    const imageMetadataRegex = /::(\w+):\s*([^)]+)/m
-    if (imageMetadataRegex.test(altText)) {
-        const imageMetadata = altText.match(imageMetadataRegex)
-        return imageMetadata[2].trim()
+    const imageMetadata = {}
+    let match
+    while ((match = imageMetadataRegex.exec(altText)) !== null) {
+        imageMetadata[match[1]] = match[2].trim()
+    }
+    // console.log(imageMetadata)
+    return imageMetadata
+}
+
+function getImageAnnotationData(imageData) {
+    if (!imageData.comment) {
+        return []
+    }
+    const imageDataArray = imageData.comment.split(',').map((data) => data.trim())
+    return imageDataArray.map((item) => {
+        const [x, y, text] = item.split('|')
+        return { x, y, text }
+    })
+}
+
+function addAnnotation(imageData, img, imageWrapper) {
+    // const currentSlide = Reveal.getCurrentSlide()
+    // const img = currentSlide.querySelector('img')
+    // if (!img) {
+    //     return
+    // }
+    // const imageWrapper = currentSlide.querySelector('.image-wrapper')
+    //
+    // // get coordinates and text for annotation
+    // const imageData = getImageMetadata(img.alt)
+
+    const annotationDataArray = getImageAnnotationData(imageData)
+    console.log(annotationDataArray)
+    for (const annotationData of annotationDataArray) {
+        const x = annotationData.x
+        const y = annotationData.y
+        const annotateText = annotationData.text
+        if (!x && !y && !annotateText) {
+            return
+        }
+
+        // create annotation box
+        const annotationBox = document.createElement('div')
+        annotationBox.textContent = annotateText
+        annotationBox.style.position = 'absolute'
+        annotationBox.style.left = `${x}px`
+        annotationBox.style.top = `${y}px`
+        annotationBox.style.color = 'black'
+        annotationBox.style.padding = '5px'
+        annotationBox.style.border = '2px solid red'
+        annotationBox.style.fontSize = '22px'
+
+        // append the annotationBox as image overlay
+        imageWrapper.insertBefore(annotationBox, img.nextSibling)
+        imageWrapper.style.position = 'relative'
     }
 }
 
@@ -184,9 +235,13 @@ function updateImageStructure() {
         const creditWrapper = document.createElement('div')
         creditWrapper.classList.add('image-credit')
         const credit = document.createElement('p')
-        credit.textContent = getImageMetadata(img.alt)
+        const imageMetadata = getImageMetadata(img.alt)
+        credit.textContent = imageMetadata.credit
         creditWrapper.appendChild(credit)
         divWrapper.appendChild(creditWrapper)
+
+        // add annotation
+        addAnnotation(imageMetadata, img, divWrapper)
     })
 }
 
