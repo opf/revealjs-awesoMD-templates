@@ -73,10 +73,46 @@ function adjustFontSize() {
                 const images = content.querySelectorAll('.image-container .image-wrapper img')
                 if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
                     images.forEach((image) => {
+                        // save the original dimension of image
+                        const [initialImageWidth, initialImageHeight] = getInitialImageDimension(image)
                         const currentWidth = image.offsetWidth
                         const currentHeight = image.offsetHeight
                         image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
                         image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
+
+                        // get the reduced dimension of image
+                        const updatedImageWidth = image.offsetWidth
+                        const updatedImageHeight = image.offsetHeight
+                        const imageWrapper = image.parentElement
+
+                        // add the annotation at the relative position after the image size is reduced
+                        if (
+                            imageWrapper.querySelectorAll('.annotation').length > 0 &&
+                            (initialImageWidth !== updatedImageWidth || initialImageHeight !== updatedImageHeight)
+                        ) {
+                            // adjustFontSize() function might run multiple times resulting in creation of multiple annotation boxes
+                            // so remove the last created annotation and add a new one on the relative position
+                            const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            if (annotationBoxes.length > 1) {
+                                annotationBoxes.forEach((annotation) => annotation.remove())
+                            }
+                            const scaleX = updatedImageWidth / initialImageWidth
+                            const scaleY = updatedImageHeight / initialImageHeight
+                            const imageData = getImageMetadata(image.alt)
+                            const annotationDataArray = getImageAnnotationData(imageData)
+                            for (const annotationData of annotationDataArray) {
+                                annotationData.x *= scaleX
+                                annotationData.y *= scaleY
+                                addAnnotation(annotationData, image, imageWrapper)
+                            }
+                            // Also, adjust the dimension and fontsize of the annotation box relative to image
+                            const newAnnotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            if (newAnnotationBoxes.length > 0) {
+                                for (const annotationBox of newAnnotationBoxes) {
+                                    annotationBox.style.fontSize = `${fontSize}px`
+                                }
+                            }
+                        }
                     })
                 }
 
@@ -91,7 +127,6 @@ function adjustFontSize() {
                     })
                 }
             })
-
         totalHeight = getTotalHeightOfChildren(content)
     }
 }
@@ -158,7 +193,7 @@ function updateImageUrl(imagePath) {
             }
         }
 
-        img.alt = img.alt.replace(imageMetadataRegex, '').trim()
+        // img.alt = img.alt.replace(imageMetadataRegex, '').trim()
     })
 }
 
@@ -168,7 +203,6 @@ function getImageMetadata(altText) {
     while ((match = imageMetadataRegex.exec(altText)) !== null) {
         imageMetadata[match[1]] = match[2].trim()
     }
-    // console.log(imageMetadata)
     return imageMetadata
 }
 
@@ -183,42 +217,33 @@ function getImageAnnotationData(imageData) {
     })
 }
 
-function addAnnotation(imageData, img, imageWrapper) {
-    // const currentSlide = Reveal.getCurrentSlide()
-    // const img = currentSlide.querySelector('img')
-    // if (!img) {
-    //     return
-    // }
-    // const imageWrapper = currentSlide.querySelector('.image-wrapper')
-    //
-    // // get coordinates and text for annotation
-    // const imageData = getImageMetadata(img.alt)
-
-    const annotationDataArray = getImageAnnotationData(imageData)
-    console.log(annotationDataArray)
-    for (const annotationData of annotationDataArray) {
-        const x = annotationData.x
-        const y = annotationData.y
-        const annotateText = annotationData.text
-        if (!x && !y && !annotateText) {
-            return
-        }
-
-        // create annotation box
-        const annotationBox = document.createElement('div')
-        annotationBox.textContent = annotateText
-        annotationBox.style.position = 'absolute'
-        annotationBox.style.left = `${x}px`
-        annotationBox.style.top = `${y}px`
-        annotationBox.style.color = 'black'
-        annotationBox.style.padding = '5px'
-        annotationBox.style.border = '2px solid red'
-        annotationBox.style.fontSize = '22px'
-
-        // append the annotationBox as image overlay
-        imageWrapper.insertBefore(annotationBox, img.nextSibling)
-        imageWrapper.style.position = 'relative'
+function addAnnotation(annotationData, img, imageWrapper) {
+    const x = annotationData.x
+    const y = annotationData.y
+    const annotateText = annotationData.text
+    if (!x && !y && !annotateText) {
+        return
     }
+    const annotationBox = document.createElement('div')
+    annotationBox.classList.add('annotation')
+    annotationBox.textContent = annotateText
+    annotationBox.style.position = 'absolute'
+    annotationBox.style.left = `${x}px`
+    annotationBox.style.top = `${y}px`
+    annotationBox.style.color = 'black'
+    annotationBox.style.padding = '5px'
+    annotationBox.style.border = '2px solid red'
+    annotationBox.style.fontSize = '22px'
+    imageWrapper.insertBefore(annotationBox, img.nextSibling)
+    imageWrapper.style.position = 'relative'
+}
+
+function getInitialImageDimension(image) {
+    if (!image.dataset.initialWidth || !image.dataset.initialHeight) {
+        image.dataset.initialWidth = image.offsetWidth
+        image.dataset.initialHeight = image.offsetHeight
+    }
+    return [parseFloat(image.dataset.initialWidth), parseFloat(image.dataset.initialHeight)]
 }
 
 // eslint-disable-next-line
@@ -241,7 +266,12 @@ function updateImageStructure() {
         divWrapper.appendChild(creditWrapper)
 
         // add annotation
-        addAnnotation(imageMetadata, img, divWrapper)
+        const annotationDataArray = getImageAnnotationData(imageMetadata)
+        if (annotationDataArray.length > 0) {
+            for (const annotationData of annotationDataArray) {
+                addAnnotation(annotationData, img, divWrapper)
+            }
+        }
     })
 }
 
