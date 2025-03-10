@@ -26,12 +26,12 @@
             Reveal.addEventListener('ready', function (event) {
                 addBackgroundOverlay()
                 updateImageStructure()
-                updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
                 fitContent()
                 adjustFontSize()
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
+                updateImageUrl('{{{ imagePath }}}')
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})

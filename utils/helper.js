@@ -1,5 +1,6 @@
 /* global Reveal */
 
+const imageMetadataRegex = /::(\w[\w-]*):\s?([^:\]\)]+(?:[:|,][^:\]\)]+)*)/gm
 const customSlideNumber = document.getElementsByClassName('custom-slide-number')
 
 // eslint-disable-next-line
@@ -72,10 +73,46 @@ function adjustFontSize() {
                 const images = content.querySelectorAll('.image-container .image-wrapper img')
                 if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
                     images.forEach((image) => {
+                        // save the original dimension of image
+                        const [initialImageWidth, initialImageHeight] = getInitialImageDimension(image)
                         const currentWidth = image.offsetWidth
                         const currentHeight = image.offsetHeight
                         image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
                         image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
+
+                        // get the reduced dimension of image
+                        const updatedImageWidth = image.offsetWidth
+                        const updatedImageHeight = image.offsetHeight
+                        const imageWrapper = image.parentElement
+
+                        // add the annotation at the relative position after the image size is reduced
+                        if (
+                            imageWrapper.querySelectorAll('.annotation').length > 0 &&
+                            (initialImageWidth !== updatedImageWidth || initialImageHeight !== updatedImageHeight)
+                        ) {
+                            // adjustFontSize() function might run multiple times resulting in creation of multiple annotation boxes
+                            // so remove the last created annotation and add a new one on the relative position
+                            const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            if (annotationBoxes.length > 1) {
+                                annotationBoxes.forEach((annotation) => annotation.remove())
+                            }
+                            const scaleX = updatedImageWidth / initialImageWidth
+                            const scaleY = updatedImageHeight / initialImageHeight
+                            const imageData = getImageMetadata(image.alt)
+                            const annotationDataArray = getImageAnnotationData(imageData)
+                            for (const annotationData of annotationDataArray) {
+                                annotationData.x *= scaleX
+                                annotationData.y *= scaleY
+                                addAnnotation(annotationData, image, imageWrapper)
+                            }
+                            // Also, adjust the dimension and fontsize of the annotation box relative to image
+                            const newAnnotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            if (newAnnotationBoxes.length > 0) {
+                                for (const annotationBox of newAnnotationBoxes) {
+                                    annotationBox.style.fontSize = `${fontSize}px`
+                                }
+                            }
+                        }
                     })
                 }
 
@@ -90,7 +127,6 @@ function adjustFontSize() {
                     })
                 }
             })
-
         totalHeight = getTotalHeightOfChildren(content)
     }
 }
@@ -145,7 +181,6 @@ function setIndex(headingData) {
 // eslint-disable-next-line
 function updateImageUrl(imagePath) {
     const images = document.querySelectorAll('.image-wrapper img')
-    const imageMetadataRegex = /::(\w+)(?:\s*(.*?))?:\s*(.*)/m
     images.forEach((img) => {
         const url = new URL(img.src)
 
@@ -158,16 +193,57 @@ function updateImageUrl(imagePath) {
             }
         }
 
-        img.alt = img.alt.replace(imageMetadataRegex, '').trim()
+        // img.alt = img.alt.replace(imageMetadataRegex, '').trim()
     })
 }
 
 function getImageMetadata(altText) {
-    const imageMetadataRegex = /::(\w+):\s*([^)]+)/m
-    if (imageMetadataRegex.test(altText)) {
-        const imageMetadata = altText.match(imageMetadataRegex)
-        return imageMetadata[2].trim()
+    const imageMetadata = {}
+    let match
+    while ((match = imageMetadataRegex.exec(altText)) !== null) {
+        imageMetadata[match[1]] = match[2].trim()
     }
+    return imageMetadata
+}
+
+function getImageAnnotationData(imageData) {
+    if (!imageData.comment) {
+        return []
+    }
+    const imageDataArray = imageData.comment.split(',').map((data) => data.trim())
+    return imageDataArray.map((item) => {
+        const [x, y, text] = item.split('|')
+        return { x, y, text }
+    })
+}
+
+function addAnnotation(annotationData, img, imageWrapper) {
+    const x = annotationData.x
+    const y = annotationData.y
+    const annotateText = annotationData.text
+    if (!x && !y && !annotateText) {
+        return
+    }
+    const annotationBox = document.createElement('div')
+    annotationBox.classList.add('annotation')
+    annotationBox.textContent = annotateText
+    annotationBox.style.position = 'absolute'
+    annotationBox.style.left = `${x}px`
+    annotationBox.style.top = `${y}px`
+    annotationBox.style.color = 'black'
+    annotationBox.style.padding = '5px'
+    annotationBox.style.border = '2px solid red'
+    annotationBox.style.fontSize = '22px'
+    imageWrapper.insertBefore(annotationBox, img.nextSibling)
+    imageWrapper.style.position = 'relative'
+}
+
+function getInitialImageDimension(image) {
+    if (!image.dataset.initialWidth || !image.dataset.initialHeight) {
+        image.dataset.initialWidth = image.offsetWidth
+        image.dataset.initialHeight = image.offsetHeight
+    }
+    return [parseFloat(image.dataset.initialWidth), parseFloat(image.dataset.initialHeight)]
 }
 
 // eslint-disable-next-line
@@ -184,9 +260,18 @@ function updateImageStructure() {
         const creditWrapper = document.createElement('div')
         creditWrapper.classList.add('image-credit')
         const credit = document.createElement('p')
-        credit.textContent = getImageMetadata(img.alt)
+        const imageMetadata = getImageMetadata(img.alt)
+        credit.textContent = imageMetadata.credit
         creditWrapper.appendChild(credit)
         divWrapper.appendChild(creditWrapper)
+
+        // add annotation
+        const annotationDataArray = getImageAnnotationData(imageMetadata)
+        if (annotationDataArray.length > 0) {
+            for (const annotationData of annotationDataArray) {
+                addAnnotation(annotationData, img, divWrapper)
+            }
+        }
     })
 }
 
