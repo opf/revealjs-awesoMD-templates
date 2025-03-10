@@ -80,14 +80,14 @@ afterEach(async () => {
     const jsCoverage = await page.coverage.stopJSCoverage()
     pti.write([...jsCoverage], { includeHostname: true, storagePath: './.nyc_output' })
     await browser.close()
-})
+}, 30000)
 
 beforeEach(async () => {
     browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] })
     page = await browser.newPage()
     await page.coverage.startJSCoverage({ resetOnNavigation: false })
     await page.goto(testUrl, { waitUntil: 'networkidle0' })
-})
+}, 30000)
 
 describe('test markdown presentation', () => {
     it('should match the total number of slides', async () => {
@@ -111,7 +111,7 @@ describe('test markdown presentation', () => {
             await testHelper.waitForTransitionEnd(page, '.progress')
             await verifySlideContent()
         }
-    }, 60000)
+    })
 
     it('should use 16:9 dimension image for normal window size and show error message when background image is not provided', async () => {
         const expectedBackgroundContents = [
@@ -121,7 +121,7 @@ describe('test markdown presentation', () => {
         await setScreenSize(screenWidth, screenHeight)
         const backgroundContents = await getBackgroundContents()
         expect(backgroundContents).toEqual(expectedBackgroundContents)
-    }, 60000)
+    })
 
     it('should use 4:3 dimension image for pdf and show error message when background image is not provided', async () => {
         const expectedBackgroundContents = [
@@ -131,5 +131,5 @@ describe('test markdown presentation', () => {
         await setScreenSize(pdfWidth, pdfHeight)
         const backgroundContents = await getBackgroundContents()
         expect(backgroundContents).toEqual(expectedBackgroundContents)
-    }, 60000)
+    })
 })
