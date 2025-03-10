@@ -157,6 +157,7 @@ gulp.task('format', () =>
             '!templates/**',
             '!tests/unit/node_modules/**',
             '!tests/unit/testFiles/dist/**',
+            '!tests/unit/coverage/**',
         ])
         .pipe(prettier())
         .pipe(gulp.dest('.'))
