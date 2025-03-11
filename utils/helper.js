@@ -269,3 +269,18 @@ function setFullPageBackground(headingData, imagePath, pdfWidth, pdfHeight) {
         }
     }
 }
+
+// The static html has already rendered svg element and on opening the static html file it tries to re-render the mermaid js block.
+// Here, mermaid tries to render the svg element and cannot interpret it as a diagram
+// This results in giving the error: 'No diagram type detected matching given configuration for text:'
+// Only removing this error didn't work and need to get and again add the svg element inside mermaid code block
+// This issue only exists in the static html so this function will only trigger while opening the static html file
+// eslint-disable-next-line
+function reappendSvgElement() {
+    const mermaidElements = document.querySelectorAll('.mermaid')
+    for (const mermaidElement of mermaidElements) {
+        const svgElement = mermaidElement.querySelector('svg')
+        mermaidElement.innerHTML = ''
+        mermaidElement.appendChild(svgElement)
+    }
+}
