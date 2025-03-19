@@ -27,6 +27,7 @@
                 addBackgroundOverlay()
                 updateImageStructure()
                 addCustomSlideNumber(event)
+                addAnnotation()
                 // only trigger removeText() function while opening static html file
                 if (window.location.protocol === 'file:') {
                     reappendSvgElement()
@@ -39,6 +40,7 @@
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
+                addAnnotation()
                 adjustFontSize()
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
