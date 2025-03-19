@@ -154,7 +154,7 @@ function updateImageUrl(imagePath) {
         } else {
             const match = url.pathname.match(/static\/(.+)/)
             if (match && match[1]) {
-                img.src = imagePath + '/' + match[1]
+                img.src = match[1]
             }
         }
 
@@ -175,18 +175,19 @@ function updateImageStructure() {
     const pTags = document.querySelectorAll('p > img')
     pTags.forEach((img) => {
         const pTag = img.parentNode
+        const divContainer = document.createElement('div')
+        divContainer.classList.add('image-container')
         const divWrapper = document.createElement('div')
         divWrapper.classList.add('image-wrapper')
         divWrapper.appendChild(img)
-        pTag.classList.add('image-container')
-        pTag.appendChild(divWrapper)
-
         const creditWrapper = document.createElement('div')
         creditWrapper.classList.add('image-credit')
         const credit = document.createElement('p')
         credit.textContent = getImageMetadata(img.alt)
         creditWrapper.appendChild(credit)
         divWrapper.appendChild(creditWrapper)
+        divContainer.appendChild(divWrapper)
+        pTag.replaceWith(divContainer)
     })
 }
 
