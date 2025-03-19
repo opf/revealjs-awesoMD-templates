@@ -28,6 +28,10 @@
                 updateImageStructure()
                 updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
+                // only trigger removeText() function while opening static html file
+                if (window.location.protocol === 'file:') {
+                    reappendSvgElement()
+                }
                 fitContent()
                 adjustFontSize()
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})

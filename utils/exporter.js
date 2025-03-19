@@ -50,6 +50,19 @@ async function exportAsHTML(url, outputUrl) {
     document.querySelectorAll('.backgrounds').forEach((element) => {
         element.remove()
     })
+    // Because of data-highlighted="yes" in the generated static html file suggesting element was already processed
+    // and <span> tag inside <code> is treated as string, resulting in invalid code block
+    // So data-highlighted attributed is removed
+    // added data-noescape which prevents <span> to be treated as text
+    // added data-trim to remove unnecessary white spaces
+    const codeBlocks = Array.from(document.querySelectorAll('code'))
+    codeBlocks
+        .filter((code) => !code.classList.contains('mermaid'))
+        .forEach((code) => {
+            code.removeAttribute('data-highlighted')
+            code.setAttribute('data-trim', '')
+            code.setAttribute('data-noescape', '')
+        })
     const updatedHtmlContent = dom.serialize()
     const formattedHtmlContent = await prettier.format(updatedHtmlContent, { parser: 'html', bracketSameLine: true })
 
