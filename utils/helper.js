@@ -1,5 +1,6 @@
 /* global Reveal */
 
+const imageMetadataRegex = /::(\w[\w-]*):\s?([^:\]\)]+(?:[:|,][^:\]\)]+)*)/gm
 const customSlideNumber = document.getElementsByClassName('custom-slide-number')
 
 // eslint-disable-next-line
@@ -72,10 +73,37 @@ function adjustFontSize() {
                 const images = content.querySelectorAll('.image-container .image-wrapper img')
                 if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
                     images.forEach((image) => {
+                        // save the original dimension of image
+                        const [initialImageWidth, initialImageHeight] = getInitialImageDimension(image)
                         const currentWidth = image.offsetWidth
                         const currentHeight = image.offsetHeight
                         image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
                         image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
+
+                        // get the reduced dimension of image, and
+                        // add annotation at the relative position after the image size is reduced
+                        const updatedImageWidth = image.offsetWidth
+                        const updatedImageHeight = image.offsetHeight
+                        const imageWrapper = image.parentElement
+                        if (
+                            imageWrapper.querySelectorAll('.annotation').length > 0 &&
+                            (initialImageWidth !== updatedImageWidth || initialImageHeight !== updatedImageHeight)
+                        ) {
+                            const scaleX = updatedImageWidth / initialImageWidth
+                            const scaleY = updatedImageHeight / initialImageHeight
+                            const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            const annotationDataArray = getImageAnnotationData(getImageMetadata(image.alt))
+                            for (const annotationBox of annotationBoxes) {
+                                const annotationCoordinates = annotationDataArray.find(
+                                    (item) => item.text === annotationBox.textContent
+                                )
+                                const newX = annotationCoordinates.x * scaleX
+                                const newY = annotationCoordinates.y * scaleY
+                                annotationBox.style.left = `${newX}px`
+                                annotationBox.style.top = `${newY}px`
+                                annotationBox.style.fontSize = `${fontSize}px`
+                            }
+                        }
                     })
                 }
 
@@ -90,7 +118,6 @@ function adjustFontSize() {
                     })
                 }
             })
-
         totalHeight = getTotalHeightOfChildren(content)
     }
 }
@@ -145,7 +172,6 @@ function setIndex(headingData) {
 // eslint-disable-next-line
 function updateImageUrl(imagePath) {
     const images = document.querySelectorAll('.image-wrapper img')
-    const imageMetadataRegex = /::(\w+)(?:\s*(.*?))?:\s*(.*)/m
     images.forEach((img) => {
         const url = new URL(img.src)
 
@@ -158,16 +184,79 @@ function updateImageUrl(imagePath) {
             }
         }
 
-        img.alt = img.alt.replace(imageMetadataRegex, '').trim()
+        // img.alt = img.alt.replace(imageMetadataRegex, '').trim()
     })
 }
 
 function getImageMetadata(altText) {
-    const imageMetadataRegex = /::(\w+):\s*([^)]+)/m
-    if (imageMetadataRegex.test(altText)) {
-        const imageMetadata = altText.match(imageMetadataRegex)
-        return imageMetadata[2].trim()
+    const imageMetadata = {}
+    let match
+    while ((match = imageMetadataRegex.exec(altText)) !== null) {
+        imageMetadata[match[1]] = match[2].trim()
     }
+    return imageMetadata
+}
+
+function getImageAnnotationData(imageData) {
+    if (!imageData.comment) {
+        return []
+    }
+    const imageDataArray = imageData.comment.split('&').map((data) => data.trim())
+    return imageDataArray.map((item) => {
+        const [x, y, text] = item.split('|')
+        return { x, y, text }
+    })
+}
+
+// eslint-disable-next-line
+function addAnnotation() {
+    const currentSlide = Reveal.getCurrentSlide()
+    const imageContainers = currentSlide.querySelectorAll('.image-container')
+    for (const imageContainer of imageContainers) {
+        const imageWrapper = imageContainer.querySelector('.image-wrapper')
+        const image = imageWrapper.querySelector('img')
+        const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+        const imageCredit = imageWrapper.querySelector('.image-credit')
+        const annotationDataArray = getImageAnnotationData(getImageMetadata(image.alt))
+
+        // Prevent addition of same annotation box over the existing annotation box
+        if (annotationBoxes && annotationBoxes.length === annotationDataArray.length) {
+            return
+        }
+        for (const annotationData of annotationDataArray) {
+            const x = annotationData.x
+            const y = annotationData.y
+            const annotationText = annotationData.text
+            if (!x && !y && !annotationText) {
+                return
+            }
+            const annotationBox = document.createElement('div')
+            annotationBox.classList.add('annotation')
+            annotationBox.textContent = annotationText
+            annotationBox.style.position = 'absolute'
+            annotationBox.style.left = `${x}px`
+            annotationBox.style.top = `${y}px`
+            annotationBox.style.color = 'black'
+            annotationBox.style.padding = '5px'
+            annotationBox.style.border = '2px solid red'
+            annotationBox.style.fontSize = '22px'
+            if (imageCredit) {
+                imageWrapper.insertBefore(annotationBox, imageCredit)
+            } else {
+                imageWrapper.insertBefore(annotationBox, image.nextSibling)
+            }
+            imageWrapper.style.position = 'relative'
+        }
+        console.log(getInitialImageDimension(image))
+    }
+}
+
+function getInitialImageDimension(image) {
+    if (!image.dataset.initialWidth || !image.dataset.initialHeight) {
+        image.dataset.initialWidth = image.offsetWidth
+        image.dataset.initialHeight = image.offsetHeight
+    }
+    return [parseFloat(image.dataset.initialWidth), parseFloat(image.dataset.initialHeight)]
 }
 
 // eslint-disable-next-line
@@ -183,7 +272,8 @@ function updateImageStructure() {
         const creditWrapper = document.createElement('div')
         creditWrapper.classList.add('image-credit')
         const credit = document.createElement('p')
-        credit.textContent = getImageMetadata(img.alt)
+        const imageMetadata = getImageMetadata(img.alt)
+        credit.textContent = imageMetadata.credit
         creditWrapper.appendChild(credit)
         divWrapper.appendChild(creditWrapper)
         divContainer.appendChild(divWrapper)
