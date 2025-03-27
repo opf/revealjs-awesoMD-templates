@@ -28,14 +28,16 @@
                 updateImageStructure()
                 updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
+                addAnnotation({{{ imageAnnotationData }}})
                 fitContent()
-                adjustFontSize()
+                adjustFontSize({{{ imageAnnotationData }}})
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
-                adjustFontSize()
+                addAnnotation({{{ imageAnnotationData }}})
+                adjustFontSize({{{ imageAnnotationData }}})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
             Reveal.addEventListener('resize', function () {

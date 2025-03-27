@@ -26,22 +26,22 @@
             Reveal.addEventListener('ready', function (event) {
                 addBackgroundOverlay()
                 updateImageStructure()
+                updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
-                addAnnotation()
+                addAnnotation({{{ imageAnnotationData }}})
                 // only trigger removeText() function while opening static html file
                 if (window.location.protocol === 'file:') {
                     reappendSvgElement()
                 }
                 fitContent()
-                adjustFontSize()
+                adjustFontSize({{{ imageAnnotationData }}})
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
-                updateImageUrl('{{{ imagePath }}}')
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
-                addAnnotation()
-                adjustFontSize()
+                addAnnotation({{{ imageAnnotationData }}})
+                adjustFontSize({{{ imageAnnotationData }}})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
             // adding the 'resize' event because slides gets resized during pdf export

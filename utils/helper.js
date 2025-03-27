@@ -1,6 +1,5 @@
 /* global Reveal */
 
-const imageMetadataRegex = /::(\w[\w-]*):\s?([^:\]\)]+(?:[:|,][^:\]\)]+)*)/gm
 const customSlideNumber = document.getElementsByClassName('custom-slide-number')
 
 // eslint-disable-next-line
@@ -16,8 +15,9 @@ function addCustomSlideNumber(event) {
 }
 
 // eslint-disable-next-line
-function adjustFontSize() {
+function adjustFontSize(imageAnnotationData) {
     const currentSlide = Reveal.getCurrentSlide()
+    const currentSlideIndex = Reveal.getIndices()
 
     function getTotalHeightOfChildren(container) {
         let totalHeight = 0
@@ -92,7 +92,8 @@ function adjustFontSize() {
                             const scaleX = updatedImageWidth / initialImageWidth
                             const scaleY = updatedImageHeight / initialImageHeight
                             const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
-                            const annotationDataArray = getImageAnnotationData(getImageMetadata(image.alt))
+                            const annotationDataArray =
+                                imageAnnotationData[currentSlideIndex.h][image.src.split('/').pop()]
                             for (const annotationBox of annotationBoxes) {
                                 const annotationCoordinates = annotationDataArray.find(
                                     (item) => item.text === annotationBox.textContent
@@ -118,6 +119,7 @@ function adjustFontSize() {
                     })
                 }
             })
+
         totalHeight = getTotalHeightOfChildren(content)
     }
 }
@@ -172,6 +174,7 @@ function setIndex(headingData) {
 // eslint-disable-next-line
 function updateImageUrl(imagePath) {
     const images = document.querySelectorAll('.image-wrapper img')
+    const imageMetadataRegex = /::(\w+)(?:\s*(.*?))?:\s*(.*)/m
     images.forEach((img) => {
         const url = new URL(img.src)
 
@@ -184,43 +187,32 @@ function updateImageUrl(imagePath) {
             }
         }
 
-        // img.alt = img.alt.replace(imageMetadataRegex, '').trim()
+        img.alt = img.alt.replace(imageMetadataRegex, '').trim()
     })
 }
 
 function getImageMetadata(altText) {
-    const imageMetadata = {}
-    let match
-    while ((match = imageMetadataRegex.exec(altText)) !== null) {
-        imageMetadata[match[1]] = match[2].trim()
+    const imageMetadataRegex = /::(\w+):\s*([^)]+)/m
+    if (imageMetadataRegex.test(altText)) {
+        const imageMetadata = altText.match(imageMetadataRegex)
+        return imageMetadata[2].trim()
     }
-    return imageMetadata
-}
-
-function getImageAnnotationData(imageData) {
-    if (!imageData.comment) {
-        return []
-    }
-    const imageDataArray = imageData.comment.split('&').map((data) => data.trim())
-    return imageDataArray.map((item) => {
-        const [x, y, text] = item.split('|')
-        return { x, y, text }
-    })
 }
 
 // eslint-disable-next-line
-function addAnnotation() {
+function addAnnotation(imageAnnotationData) {
     const currentSlide = Reveal.getCurrentSlide()
+    const currentSlideIndex = Reveal.getIndices()
     const imageContainers = currentSlide.querySelectorAll('.image-container')
     for (const imageContainer of imageContainers) {
         const imageWrapper = imageContainer.querySelector('.image-wrapper')
         const image = imageWrapper.querySelector('img')
         const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
         const imageCredit = imageWrapper.querySelector('.image-credit')
-        const annotationDataArray = getImageAnnotationData(getImageMetadata(image.alt))
+        const annotationDataArray = imageAnnotationData[currentSlideIndex.h][image.src.split('/').pop()]
 
         // Prevent addition of same annotation box over the existing annotation box
-        if (annotationBoxes && annotationBoxes.length === annotationDataArray.length) {
+        if (!annotationDataArray || (annotationBoxes && annotationBoxes.length === annotationDataArray.length)) {
             return
         }
         for (const annotationData of annotationDataArray) {
@@ -271,8 +263,7 @@ function updateImageStructure() {
         const creditWrapper = document.createElement('div')
         creditWrapper.classList.add('image-credit')
         const credit = document.createElement('p')
-        const imageMetadata = getImageMetadata(img.alt)
-        credit.textContent = imageMetadata.credit
+        credit.textContent = getImageMetadata(img.alt)
         creditWrapper.appendChild(credit)
         divWrapper.appendChild(creditWrapper)
         divContainer.appendChild(divWrapper)
