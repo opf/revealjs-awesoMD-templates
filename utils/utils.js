@@ -215,6 +215,39 @@ function preProcessMarkdown(file, configFile) {
     return rawMarkdown
 }
 
+function getImageAnnotationData(rawMarkdown) {
+    const imageAndAnnotationRegex = /!\[(.*)\]\((.+)\)\n*```annotation\n([\s\S]*?)```/g
+    const annotationBlockRegex = /```annotation\n([\s\S]*?)```/g
+    const updatedMarkdown = plugin.addSlideSeparator(rawMarkdown, { slideSeparator: config.slideSeparator })
+    const markdown = extractFrontmatter(updatedMarkdown)[0]
+    const separatorRegex = new RegExp(`^${config.slideSeparator}\n`, 'gm')
+    const slides = markdown.split(separatorRegex)
+    const imageAnnotationData = {}
+    slides.forEach((slide, slideNumber) => {
+        let matches
+        while ((matches = imageAndAnnotationRegex.exec(slide)) !== null) {
+            const imageUrl = matches[2]
+            const annotationDataArray = matches[3].trim().split('\n')
+
+            const annotationData = annotationDataArray.map((item) => {
+                const [x, y, text] = item.split('|')
+                return { x, y, text }
+            })
+
+            if (!imageAnnotationData[slideNumber]) {
+                imageAnnotationData[slideNumber] = {}
+            }
+
+            imageAnnotationData[slideNumber][imageUrl] = annotationData
+        }
+        if (!imageAnnotationData[slideNumber]) {
+            imageAnnotationData[slideNumber] = {}
+        }
+    })
+    const markdownWithoutAnnotation = rawMarkdown.replace(annotationBlockRegex, '')
+    return [markdownWithoutAnnotation, imageAnnotationData]
+}
+
 module.exports = {
     readMarkdownFile,
     extractFrontmatter,
@@ -225,4 +258,5 @@ module.exports = {
     insertSlideTypeAccordingToHeadingLevel,
     getYAMLConfigs,
     preProcessMarkdown,
+    getImageAnnotationData,
 }
