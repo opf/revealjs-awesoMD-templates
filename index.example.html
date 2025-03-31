@@ -33,14 +33,13 @@
                 if (window.location.protocol === 'file:') {
                     reappendSvgElement()
                 }
-                fitContent()
+                fitContent({{{ imageAnnotationData }}})
                 adjustFontSize({{{ imageAnnotationData }}})
                 showHideFooterAndSlideNumber('{{{ slideNumber }}}', {{ hideFooter }})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
             Reveal.addEventListener('slidechanged', function (event) {
                 setIndex({{{ headingData }}})
-                addAnnotation({{{ imageAnnotationData }}})
                 adjustFontSize({{{ imageAnnotationData }}})
                 setFullPageBackground({{{ headingData }}}, '{{{ imagePath }}}', {{ config.pdfWidth }}, {{ config.pdfHeight }})
             })
