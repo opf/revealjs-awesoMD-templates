@@ -15,8 +15,9 @@ function addCustomSlideNumber(event) {
 }
 
 // eslint-disable-next-line
-function adjustFontSize() {
+function adjustFontSize(imageAnnotationData) {
     const currentSlide = Reveal.getCurrentSlide()
+    const currentSlideIndex = Reveal.getIndices()
 
     function getTotalHeightOfChildren(container) {
         let totalHeight = 0
@@ -72,10 +73,63 @@ function adjustFontSize() {
                 const images = content.querySelectorAll('.image-container .image-wrapper img')
                 if (fontSize <= fontSizeToStartReducingImage && images.length > 0) {
                     images.forEach((image) => {
+                        // save the original dimension of image
+                        const [initialImageWidth, initialImageHeight] = getInitialImageDimension(image)
                         const currentWidth = image.offsetWidth
                         const currentHeight = image.offsetHeight
                         image.style.width = `${Math.floor(currentWidth * scaleFactor)}px`
                         image.style.height = `${Math.floor(currentHeight * scaleFactor)}px`
+
+                        // get the reduced dimension of image, and
+                        // add annotation at the relative position after the image size is reduced
+                        const updatedImageWidth = image.offsetWidth
+                        const updatedImageHeight = image.offsetHeight
+                        const imageWrapper = image.parentElement
+                        if (
+                            imageWrapper.querySelectorAll('.annotation').length > 0 &&
+                            (initialImageWidth !== updatedImageWidth || initialImageHeight !== updatedImageHeight)
+                        ) {
+                            const scaleX = updatedImageWidth / initialImageWidth
+                            const scaleY = updatedImageHeight / initialImageHeight
+                            const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                            const annotationDataArray =
+                                imageAnnotationData[currentSlideIndex.h][image.src.split('/').pop()]
+                            for (const annotationBox of annotationBoxes) {
+                                const annotationCoordinates = annotationDataArray.find(
+                                    (item) => item.text === annotationBox.textContent.trim()
+                                )
+                                const originalX = annotationCoordinates.x
+                                const originalY = annotationCoordinates.y
+                                const newX = originalX * scaleX
+                                const newY = originalY * scaleY
+
+                                const escapedClass = CSS.escape(`${originalX}-${originalY}`)
+                                const dotElement = imageWrapper.querySelector(`.dot.${escapedClass}`)
+                                const lineElement = imageWrapper.querySelector(`.line.${escapedClass}`)
+                                const annotationBoxElement = imageWrapper.querySelector(`.annotation.${escapedClass}`)
+                                if (dotElement) {
+                                    dotElement.remove()
+                                }
+                                if (lineElement) {
+                                    lineElement.remove()
+                                }
+                                if (annotationBoxElement) {
+                                    annotationBoxElement.remove()
+                                }
+
+                                updateAnnotation(
+                                    newX,
+                                    newY,
+                                    annotationBox.textContent,
+                                    imageWrapper,
+                                    image,
+                                    originalX,
+                                    originalY
+                                )
+                                const updatedAnnotationBox = imageWrapper.querySelector(`.annotation.${escapedClass}`)
+                                updatedAnnotationBox.style.fontSize = `${fontSize}px`
+                            }
+                        }
                     })
                 }
 
@@ -96,7 +150,7 @@ function adjustFontSize() {
 }
 
 // eslint-disable-next-line
-function fitContent() {
+function fitContent(imageAnnotationData) {
     const images = document.querySelectorAll('img')
     let imagesLoaded = 0
 
@@ -107,14 +161,14 @@ function fitContent() {
             img.addEventListener('load', () => {
                 imagesLoaded++
                 if (imagesLoaded === images.length) {
-                    adjustFontSize()
+                    adjustFontSize(imageAnnotationData)
                 }
             })
         }
     })
 
     if (images.length === 0) {
-        adjustFontSize()
+        adjustFontSize(imageAnnotationData)
     }
 }
 
@@ -171,25 +225,212 @@ function getImageMetadata(altText) {
 }
 
 // eslint-disable-next-line
-function updateImageStructure() {
-    const pTags = document.querySelectorAll('p > img')
-    pTags.forEach((img) => {
-        const pTag = img.parentNode
-        const divContainer = document.createElement('div')
-        divContainer.classList.add('image-container')
-        const divWrapper = document.createElement('div')
-        divWrapper.classList.add('image-wrapper')
-        divWrapper.appendChild(img)
-        const creditWrapper = document.createElement('div')
-        creditWrapper.classList.add('image-credit')
-        const credit = document.createElement('p')
-        credit.textContent = getImageMetadata(img.alt)
-        creditWrapper.appendChild(credit)
-        divWrapper.appendChild(creditWrapper)
-        divContainer.appendChild(divWrapper)
-        pTag.replaceWith(divContainer)
-    })
+function addAnnotation(imageAnnotationData) {
+    console.log(imageAnnotationData)
+    const allSlides = Reveal.getSlides()
+    for (const [slideNumber, slide] of allSlides.entries()) {
+        const annotationData = imageAnnotationData[slideNumber]
+        if (annotationData && Object.keys(annotationData).length > 0) {
+            const imageContainers = slide.querySelectorAll('.image-container')
+            for (const imageContainer of imageContainers) {
+                const imageWrapper = imageContainer.querySelector('.image-wrapper')
+                const image = imageWrapper.querySelector('img')
+                const annotationBoxes = imageWrapper.querySelectorAll('.annotation')
+                const annotationDataArray = imageAnnotationData[slideNumber][image.src.split('/').pop()]
+
+                // prevent addition of same annotation box over the existing annotation box
+                if (
+                    !annotationDataArray ||
+                    (annotationBoxes && annotationBoxes.length === annotationDataArray.length)
+                ) {
+                    return
+                }
+
+                for (const annotationData of annotationDataArray) {
+                    const x = annotationData.x
+                    const y = annotationData.y
+                    const annotationText = annotationData.text
+                    if (!x && !y && !annotationText) {
+                        return
+                    }
+                    updateAnnotation(x, y, annotationText, imageWrapper, image)
+                }
+            }
+        }
+    }
 }
+
+function updateAnnotation(x, y, annotationText, imageWrapper, image, originalX = x, originalY = y) {
+    const imageCredit = imageWrapper.querySelector('.image-credit')
+
+    // add dot on the x and y coordinate
+    const dot = document.createElement('div')
+    dot.classList.add('dot', `${originalX}-${originalY}`)
+    dot.style.position = 'absolute'
+    dot.style.left = `${x}px`
+    dot.style.top = `${y}px`
+    dot.style.width = '8px'
+    dot.style.height = '8px'
+    dot.style.borderRadius = '50%'
+    dot.style.backgroundColor = 'red'
+
+    // annotation box
+    const annotationBox = document.createElement('div')
+    annotationBox.classList.add('annotation', `${originalX}-${originalY}`)
+    annotationBox.textContent = annotationText
+    annotationBox.style.color = 'black'
+    annotationBox.style.padding = '5px'
+    annotationBox.style.border = '2px solid red'
+    annotationBox.style.fontSize = '22px'
+    annotationBox.style.width = 'fit-content'
+
+    // // position annotation box near the dot without overlapping and not above the dot.
+    // let boxLeft, boxTop
+    // let overlap = false
+    // let isAboveDot = false
+    // let attempts = 0
+    // const existingBoxes = []
+    //
+    // do {
+    //     const offsetX = Math.random() * 50
+    //     const offsetY = Math.random() * 50
+    //     const signX = Math.random() < 0.5 ? -1 : 1
+    //     const signY = Math.random() < 0.5 ? -1 : 1
+    //     boxLeft = Number(x) + offsetX * signX
+    //     boxTop = Number(y) + offsetY * signY
+    //     overlap = existingBoxes.some((existingBox) => {
+    //         const existingLeft = existingBox.left
+    //         const existingTop = existingBox.top
+    //         const existingWidth = existingBox.width
+    //         const existingHeight = existingBox.height
+    //         const currentWidth = annotationBox.offsetWidth
+    //         const currentHeight = annotationBox.offsetHeight
+    //         return (
+    //             boxLeft < existingLeft + existingWidth &&
+    //             boxLeft + currentWidth > existingLeft &&
+    //             boxTop < existingTop + existingHeight &&
+    //             boxTop + currentHeight > existingTop
+    //         )
+    //     })
+    //     // Ensure annotation box is not created above the dot.
+    //     isAboveDot = boxTop < y
+    //     attempts++ // try max attempts to prevent infinite loops
+    // } while ((overlap || isAboveDot) && attempts < 100)
+    //
+    // annotationBox.style.left = `${boxLeft}px`
+    // annotationBox.style.top = `${boxTop}px`
+    //
+    // // store position of created annotation boxes
+    // existingBoxes.push({
+    //     left: boxLeft,
+    //     top: boxTop,
+    //     width: annotationBox.offsetWidth,
+    //     height: annotationBox.offsetHeight,
+    // })
+    //
+    // // draw a line from dot to annotation box
+    // const deltaX = boxLeft - Number(x)
+    // const deltaY = boxTop - Number(y)
+    // const lineLength = Math.sqrt(deltaX * deltaX + deltaY * deltaY)
+    // const angle = Math.atan2(deltaY, deltaX)
+    //
+    // const line = document.createElement('div')
+    // line.classList.add('line')
+    // line.classList.add(`${originalX}-${originalY}`)
+    // line.style.position = 'absolute'
+    // line.style.width = `${lineLength}px`
+    // line.style.height = '0px'
+    // line.style.transformOrigin = '0 0'
+    // line.style.transform = `rotate(${angle}rad)`
+    // line.style.left = `${Number(x) + 2.5}px`
+    // line.style.top = `${Number(y) + 2.5}px`
+    // line.style.border = '1px solid red'
+    // line.style.backgroundColor = 'red'
+
+    if (imageCredit) {
+        imageWrapper.insertBefore(dot, imageCredit)
+        imageWrapper.insertBefore(annotationBox, imageCredit)
+        // imageWrapper.insertBefore(line, imageCredit)
+    } else {
+        imageWrapper.insertBefore(dot, image.nextSibling)
+        imageWrapper.insertBefore(annotationBox, image.nextSibling)
+        // imageWrapper.insertBefore(line, image.nextSibling)
+    }
+    imageWrapper.style.position = 'relative'
+}
+
+function getInitialImageDimension(image) {
+    if (!image.dataset.initialWidth || !image.dataset.initialHeight) {
+        image.dataset.initialWidth = image.offsetWidth
+        image.dataset.initialHeight = image.offsetHeight
+    }
+    return [parseFloat(image.dataset.initialWidth), parseFloat(image.dataset.initialHeight)]
+}
+
+function updateImageStructure(imageAnnotationData) {
+    const allSlides = Reveal.getSlides()
+    for (const [slideNumber, slide] of allSlides.entries()) {
+        // console.log(slide)
+        const images = slide.querySelectorAll('p > img')
+        for (const image of images) {
+            const pTag = image.parentNode
+            pTag.remove()
+
+            const imageContainer = document.createElement('div')
+            imageContainer.classList.add('image-container')
+
+            const imageWrapper = document.createElement('div')
+            imageWrapper.classList.add('image-wrapper')
+
+            const imageCredit = document.createElement('div')
+            imageCredit.classList.add('image-credit')
+            const credit = document.createElement('p')
+            credit.classList.add('credit')
+            credit.textContent = getImageMetadata(image.alt)
+            imageCredit.appendChild(credit)
+
+            const annotationDataArray = imageAnnotationData[slideNumber][image.src.split('/').pop()]
+            for (const annotationData of annotationDataArray) {
+                const x = annotationData.x
+                const y = annotationData.y
+                const text = annotationData.text
+                if(!x && !y && !text) {
+                    return
+                }
+
+                updateAnnotation(x, y, text, imageWrapper, image)
+            }
+
+            imageWrapper.appendChild(image)
+            imageWrapper.appendChild(imageCredit)
+            imageContainer.appendChild(imageWrapper)
+
+            const content = slide.querySelector('.content')
+            content.appendChild(imageContainer)
+        }
+    }
+}
+
+// eslint-disable-next-line
+// function updateImageStructure() {
+//     const pTags = document.querySelectorAll('p > img')
+//     pTags.forEach((img) => {
+//         const pTag = img.parentNode
+//         const divContainer = document.createElement('div')
+//         divContainer.classList.add('image-container')
+//         const divWrapper = document.createElement('div')
+//         divWrapper.classList.add('image-wrapper')
+//         divWrapper.appendChild(img)
+//         const creditWrapper = document.createElement('div')
+//         creditWrapper.classList.add('image-credit')
+//         const credit = document.createElement('p')
+//         credit.textContent = getImageMetadata(img.alt)
+//         creditWrapper.appendChild(credit)
+//         divWrapper.appendChild(creditWrapper)
+//         divContainer.appendChild(divWrapper)
+//         pTag.replaceWith(divContainer)
+//     })
+// }
 
 // eslint-disable-next-line
 function showHideFooterAndSlideNumber(slideNumber, hideFooter) {

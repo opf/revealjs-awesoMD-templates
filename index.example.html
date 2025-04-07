@@ -25,7 +25,7 @@
             // config is defined in config-reveal.js
             Reveal.addEventListener('ready', function (event) {
                 addBackgroundOverlay()
-                updateImageStructure()
+                updateImageStructure({{{ imageAnnotationData }}})
                 updateImageUrl('{{{ imagePath }}}')
                 addCustomSlideNumber(event)
                 // only trigger removeText() function while opening static html file

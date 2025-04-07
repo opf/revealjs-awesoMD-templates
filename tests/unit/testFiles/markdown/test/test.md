@@ -125,3 +125,9 @@ flowchart TD
 
 > [!CAUTION]
         > Advises about risks or negative outcomes of certain actions.
+
+## Annotation
+![test annotation](test-image.jpg)
+```annotation
+100|100|Test Annotation
+```
