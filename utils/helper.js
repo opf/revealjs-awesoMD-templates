@@ -226,6 +226,7 @@ function getImageMetadata(altText) {
 
 // eslint-disable-next-line
 function addAnnotation(imageAnnotationData) {
+    console.log(imageAnnotationData)
     const allSlides = Reveal.getSlides()
     for (const [slideNumber, slide] of allSlides.entries()) {
         const annotationData = imageAnnotationData[slideNumber]
@@ -264,98 +265,96 @@ function updateAnnotation(x, y, annotationText, imageWrapper, image, originalX =
 
     // add dot on the x and y coordinate
     const dot = document.createElement('div')
-    dot.classList.add('dot')
-    dot.classList.add(`${originalX}-${originalY}`)
+    dot.classList.add('dot', `${originalX}-${originalY}`)
     dot.style.position = 'absolute'
     dot.style.left = `${x}px`
     dot.style.top = `${y}px`
-    dot.style.width = '5px'
-    dot.style.height = '5px'
+    dot.style.width = '8px'
+    dot.style.height = '8px'
     dot.style.borderRadius = '50%'
     dot.style.backgroundColor = 'red'
 
     // annotation box
     const annotationBox = document.createElement('div')
-    annotationBox.classList.add('annotation')
-    annotationBox.classList.add(`${originalX}-${originalY}`)
+    annotationBox.classList.add('annotation', `${originalX}-${originalY}`)
     annotationBox.textContent = annotationText
-    annotationBox.style.position = 'absolute'
     annotationBox.style.color = 'black'
     annotationBox.style.padding = '5px'
     annotationBox.style.border = '2px solid red'
     annotationBox.style.fontSize = '22px'
+    annotationBox.style.width = 'fit-content'
 
-    // position annotation box near the dot without overlapping and not above the dot.
-    let boxLeft, boxTop
-    let overlap = false
-    let isAboveDot = false
-    let attempts = 0
-    const existingBoxes = []
-
-    do {
-        const offsetX = Math.random() * 50
-        const offsetY = Math.random() * 50
-        const signX = Math.random() < 0.5 ? -1 : 1
-        const signY = Math.random() < 0.5 ? -1 : 1
-        boxLeft = Number(x) + offsetX * signX
-        boxTop = Number(y) + offsetY * signY
-        overlap = existingBoxes.some((existingBox) => {
-            const existingLeft = existingBox.left
-            const existingTop = existingBox.top
-            const existingWidth = existingBox.width
-            const existingHeight = existingBox.height
-            const currentWidth = annotationBox.offsetWidth
-            const currentHeight = annotationBox.offsetHeight
-            return (
-                boxLeft < existingLeft + existingWidth &&
-                boxLeft + currentWidth > existingLeft &&
-                boxTop < existingTop + existingHeight &&
-                boxTop + currentHeight > existingTop
-            )
-        })
-        // Ensure annotation box is not created above the dot.
-        isAboveDot = boxTop < y
-        attempts++ // try max attempts to prevent infinite loops
-    } while ((overlap || isAboveDot) && attempts < 100)
-
-    annotationBox.style.left = `${boxLeft}px`
-    annotationBox.style.top = `${boxTop}px`
-
-    // store position of created annotation boxes
-    existingBoxes.push({
-        left: boxLeft,
-        top: boxTop,
-        width: annotationBox.offsetWidth,
-        height: annotationBox.offsetHeight,
-    })
-
-    // draw a line from dot to annotation box
-    const deltaX = boxLeft - Number(x)
-    const deltaY = boxTop - Number(y)
-    const lineLength = Math.sqrt(deltaX * deltaX + deltaY * deltaY)
-    const angle = Math.atan2(deltaY, deltaX)
-
-    const line = document.createElement('div')
-    line.classList.add('line')
-    line.classList.add(`${originalX}-${originalY}`)
-    line.style.position = 'absolute'
-    line.style.width = `${lineLength}px`
-    line.style.height = '0px'
-    line.style.transformOrigin = '0 0'
-    line.style.transform = `rotate(${angle}rad)`
-    line.style.left = `${Number(x) + 2.5}px`
-    line.style.top = `${Number(y) + 2.5}px`
-    line.style.border = '1px solid red'
-    line.style.backgroundColor = 'red'
+    // // position annotation box near the dot without overlapping and not above the dot.
+    // let boxLeft, boxTop
+    // let overlap = false
+    // let isAboveDot = false
+    // let attempts = 0
+    // const existingBoxes = []
+    //
+    // do {
+    //     const offsetX = Math.random() * 50
+    //     const offsetY = Math.random() * 50
+    //     const signX = Math.random() < 0.5 ? -1 : 1
+    //     const signY = Math.random() < 0.5 ? -1 : 1
+    //     boxLeft = Number(x) + offsetX * signX
+    //     boxTop = Number(y) + offsetY * signY
+    //     overlap = existingBoxes.some((existingBox) => {
+    //         const existingLeft = existingBox.left
+    //         const existingTop = existingBox.top
+    //         const existingWidth = existingBox.width
+    //         const existingHeight = existingBox.height
+    //         const currentWidth = annotationBox.offsetWidth
+    //         const currentHeight = annotationBox.offsetHeight
+    //         return (
+    //             boxLeft < existingLeft + existingWidth &&
+    //             boxLeft + currentWidth > existingLeft &&
+    //             boxTop < existingTop + existingHeight &&
+    //             boxTop + currentHeight > existingTop
+    //         )
+    //     })
+    //     // Ensure annotation box is not created above the dot.
+    //     isAboveDot = boxTop < y
+    //     attempts++ // try max attempts to prevent infinite loops
+    // } while ((overlap || isAboveDot) && attempts < 100)
+    //
+    // annotationBox.style.left = `${boxLeft}px`
+    // annotationBox.style.top = `${boxTop}px`
+    //
+    // // store position of created annotation boxes
+    // existingBoxes.push({
+    //     left: boxLeft,
+    //     top: boxTop,
+    //     width: annotationBox.offsetWidth,
+    //     height: annotationBox.offsetHeight,
+    // })
+    //
+    // // draw a line from dot to annotation box
+    // const deltaX = boxLeft - Number(x)
+    // const deltaY = boxTop - Number(y)
+    // const lineLength = Math.sqrt(deltaX * deltaX + deltaY * deltaY)
+    // const angle = Math.atan2(deltaY, deltaX)
+    //
+    // const line = document.createElement('div')
+    // line.classList.add('line')
+    // line.classList.add(`${originalX}-${originalY}`)
+    // line.style.position = 'absolute'
+    // line.style.width = `${lineLength}px`
+    // line.style.height = '0px'
+    // line.style.transformOrigin = '0 0'
+    // line.style.transform = `rotate(${angle}rad)`
+    // line.style.left = `${Number(x) + 2.5}px`
+    // line.style.top = `${Number(y) + 2.5}px`
+    // line.style.border = '1px solid red'
+    // line.style.backgroundColor = 'red'
 
     if (imageCredit) {
         imageWrapper.insertBefore(dot, imageCredit)
         imageWrapper.insertBefore(annotationBox, imageCredit)
-        imageWrapper.insertBefore(line, imageCredit)
+        // imageWrapper.insertBefore(line, imageCredit)
     } else {
         imageWrapper.insertBefore(dot, image.nextSibling)
         imageWrapper.insertBefore(annotationBox, image.nextSibling)
-        imageWrapper.insertBefore(line, image.nextSibling)
+        // imageWrapper.insertBefore(line, image.nextSibling)
     }
     imageWrapper.style.position = 'relative'
 }
@@ -368,26 +367,70 @@ function getInitialImageDimension(image) {
     return [parseFloat(image.dataset.initialWidth), parseFloat(image.dataset.initialHeight)]
 }
 
-// eslint-disable-next-line
-function updateImageStructure() {
-    const pTags = document.querySelectorAll('p > img')
-    pTags.forEach((img) => {
-        const pTag = img.parentNode
-        const divContainer = document.createElement('div')
-        divContainer.classList.add('image-container')
-        const divWrapper = document.createElement('div')
-        divWrapper.classList.add('image-wrapper')
-        divWrapper.appendChild(img)
-        const creditWrapper = document.createElement('div')
-        creditWrapper.classList.add('image-credit')
-        const credit = document.createElement('p')
-        credit.textContent = getImageMetadata(img.alt)
-        creditWrapper.appendChild(credit)
-        divWrapper.appendChild(creditWrapper)
-        divContainer.appendChild(divWrapper)
-        pTag.replaceWith(divContainer)
-    })
+function updateImageStructure(imageAnnotationData) {
+    const allSlides = Reveal.getSlides()
+    for (const [slideNumber, slide] of allSlides.entries()) {
+        // console.log(slide)
+        const images = slide.querySelectorAll('p > img')
+        for (const image of images) {
+            const pTag = image.parentNode
+            pTag.remove()
+
+            const imageContainer = document.createElement('div')
+            imageContainer.classList.add('image-container')
+
+            const imageWrapper = document.createElement('div')
+            imageWrapper.classList.add('image-wrapper')
+
+            const imageCredit = document.createElement('div')
+            imageCredit.classList.add('image-credit')
+            const credit = document.createElement('p')
+            credit.classList.add('credit')
+            credit.textContent = getImageMetadata(image.alt)
+            imageCredit.appendChild(credit)
+
+            const annotationDataArray = imageAnnotationData[slideNumber][image.src.split('/').pop()]
+            for (const annotationData of annotationDataArray) {
+                const x = annotationData.x
+                const y = annotationData.y
+                const text = annotationData.text
+                if(!x && !y && !text) {
+                    return
+                }
+
+                updateAnnotation(x, y, text, imageWrapper, image)
+            }
+
+            imageWrapper.appendChild(image)
+            imageWrapper.appendChild(imageCredit)
+            imageContainer.appendChild(imageWrapper)
+
+            const content = slide.querySelector('.content')
+            content.appendChild(imageContainer)
+        }
+    }
 }
+
+// eslint-disable-next-line
+// function updateImageStructure() {
+//     const pTags = document.querySelectorAll('p > img')
+//     pTags.forEach((img) => {
+//         const pTag = img.parentNode
+//         const divContainer = document.createElement('div')
+//         divContainer.classList.add('image-container')
+//         const divWrapper = document.createElement('div')
+//         divWrapper.classList.add('image-wrapper')
+//         divWrapper.appendChild(img)
+//         const creditWrapper = document.createElement('div')
+//         creditWrapper.classList.add('image-credit')
+//         const credit = document.createElement('p')
+//         credit.textContent = getImageMetadata(img.alt)
+//         creditWrapper.appendChild(credit)
+//         divWrapper.appendChild(creditWrapper)
+//         divContainer.appendChild(divWrapper)
+//         pTag.replaceWith(divContainer)
+//     })
+// }
 
 // eslint-disable-next-line
 function showHideFooterAndSlideNumber(slideNumber, hideFooter) {
